@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC  
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+   
+<mapper namespace="com.fh.shop.admin.mapper.member.IMemberMapper">
+    <sql id="memberwhere">
+        <where>
+            <if test="memberName!=null and memberName!=''">
+                and memberName like concat('%',#{memberName},'%')
+            </if>
+            <if test="phone!=null and phone!=''">
+                and phone like concat('%',#{phone},'%')
+            </if>
+            <if test="minDate!=null ">
+                and brithdy>=#{minDate}
+            </if>
+            <if test="maxDate!=null and maxDate>minDate">
+                and brithdy &lt;#{maxDate}
+            </if>
+            <if test="area1!=null and area1!='' and area1!=-1">
+                and  area1=#{area1}
+            </if>
+            <if test="area2!=null and area2!='' and area2!=-1">
+                and area2=#{area2}
+            </if>
+            <if test="area3!=null and area3!='' and area3!=-1">
+                and  area3=#{area3}
+            </if>
+        </where>
+    </sql>
+
+    <select id="queryMemberList" parameterType="com.fh.shop.admin.param.member.MemberSearch" resultType="com.fh.shop.admin.po.member.Member">
+        select t.* from(
+        select m.id,memberName,realName,phone,email,brithdy,concat(a1.areaname,"-->",a2.areaname,"-->",a3.areaname) areanames
+        from t_member m
+        left join t_area a1 on a1.id=m.area1
+        left join t_area a2 on a2.id=m.area2
+        left join t_area a3 on a3.id=m.area3
+        <include refid="memberwhere"></include>
+         order by m.id desc
+        )t limit #{start},#{length}
+    </select>
+
+    <select id="queryMemberCount" parameterType="com.fh.shop.admin.param.member.MemberSearch" resultType="long">
+        select count(*) from t_member
+        <include refid="memberwhere"></include>
+    </select>
+
+
+
+
+
+
+
+<!--<select id="queryShopSearchList" parameterType="com.fh.shop.param.user.UserSearch" resultType="com.fh.shop.po.shop.Shop">
+    select s.*,b.brandname "brandName" from t_shop s
+    left join t_brand b on  b.id=s.brandId
+        left join t_classify c1 on c1.id=s.classify1
+        left join t_classify c2 on c2.id=s.classify2
+        left join t_classify c3 on c3.id=s.classify3
+    <include refid="shopwhere"></include>
+    order by s.id desc
+</select>-->
+
+
+
+
+
+
+
+
+
+
+</mapper>

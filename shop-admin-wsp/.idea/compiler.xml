@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jpa-test" />
+        <module name="mp-test" />
+        <module name="shop-admin-wsp" />
+        <module name="shop-api" />
+        <module name="shop-api-brand" />
+        <module name="shop-api-springboot" />
+        <module name="shop-portal-sb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="car-admin" target="1.8" />
+      <module name="car-test" target="1.5" />
+      <module name="mp-wsp" target="1.8" />
+      <module name="mp-wsp-test" target="1.5" />
+      <module name="shop-admin-w" target="1.8" />
+      <module name="shop-admin-wang" target="1.8" />
+      <module name="shop-admin-wsp-V2" target="1.8" />
+      <module name="shop-admin-wsp-v2" target="1.8" />
+      <module name="shop-admin-wsp-V3" target="1.7" />
+      <module name="shop-admin-wsp-v3" target="1.5" />
+      <module name="shop-api-sb" target="1.8" />
+      <module name="shop-api-v2" target="1.8" />
+      <module name="test" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

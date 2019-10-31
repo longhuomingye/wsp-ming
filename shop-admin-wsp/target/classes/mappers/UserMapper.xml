@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC  
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+   
+<mapper namespace="com.fh.shop.admin.mapper.user.IUserMapper">
+	<sql id="userWhere">
+		<where>
+			<if test=" userName !=null and userName !='' ">
+				userName like CONCAT(CONCAT('%',#{userName}),'%')
+			</if>
+			<if test=" realName !=null and realName !='' ">
+				and realName like CONCAT(CONCAT('%',#{realName}),'%')
+			</if>
+
+			<if test=" minAge !=null and minAge >0 ">
+				and age >= #{minAge}
+			</if>
+			<if test=" maxAge !=null and maxAge >=minAge ">
+				and age &lt;= #{maxAge}
+			</if>
+			<if test=" minPay !=null and minPay >0 ">
+				and pay >= #{minPay}
+			</if>
+			<if test=" maxPay !=null and maxPay >=minPay ">
+				and pay &lt;= #{maxPay}
+			</if>
+			<if test=" minDemo !=null">
+				and entryTime >= #{minDemo}
+			</if>
+			<if test=" maxDemo !=null">
+				and entryTime &lt;= #{maxDemo}
+			</if>
+			<if test=" roleIds !=null and roleIdsLengTh>0">
+				and tu.id in
+				(
+				select userId from t_user_role
+				where roleId in
+				<foreach collection="roleIds" item="roleIds" open="(" separator="," close=")">
+					#{roleIds}
+				</foreach>
+				group by userId
+				having count(*)=#{roleIdsLengTh}
+				)
+			</if>
+			<if test=" area1 !=null and area1 > 0">
+				and area1 = #{area1}
+			</if>
+			<if test=" area2 !=null and area2 > 0">
+				and area2 = #{area2}
+			</if>
+			<if test=" area3 !=null and area3 > 0">
+				and area3 = #{area3}
+			</if>
+		</where>
+	</sql>
+	<!-- 新增用户的方法 -->
+	<insert id="addUser" parameterType="com.fh.shop.admin.po.user.User" useGeneratedKeys="true" keyProperty="id">
+		insert  into  t_user (userName,realName,salt,password,sex,age,phone,email,pay,entryTime,headImagePath,area1,area2,area3)
+		values (#{userName},#{realName},#{salt},#{password},#{sex},#{age},#{phone},#{email},#{pay},#{entryTime},#{headImagePath},#{area1},#{area2},#{area3})
+	</insert>
+	<!-- 查询用户数据/条件查询 -->
+	<select id="userList" parameterType="com.fh.shop.admin.param.UserSearchParam" resultType="com.fh.shop.admin.po.user.User">
+		select t.* from (
+			select tu.id,tu.userName,tu.realName,tu.password,tu.sex,tu.age,tu.phone,tu.email,tu.pay,
+			tu.entryTime,tu.headImagePath,tu.loginCount,tu.area1,tu.area2,tu.area3
+			from t_user tu
+			<include refid="userWhere"></include>
+			order by id desc
+		) t
+		limit #{start},#{length}
+	</select>
+	<!--修改查询角色数据进行回显-->
+	<select id="toUpdateUser" parameterType="java.lang.Integer" resultType="com.fh.shop.admin.po.user.User">
+		select  id,userName,realName,password,sex,age,phone,email,pay,entryTime,headImagePath,salt,area1,area2,area3
+		from t_user
+		where id = #{id}
+	</select>
+	<!--修改数据的方法-->
+	<update id="updateUser" parameterType="com.fh.shop.admin.po.user.User">
+		update t_user
+		<set>
+			<if test=" userName !=null and userName !='' ">
+				userName = #{userName}
+			</if>
+			<if test=" realName !=null and realName !='' ">
+				,realName = #{realName}
+			</if>
+			<if test=" sex !=null and sex >=0 ">
+				,sex = #{sex}
+			</if>
+			<if test=" age !=null and age >0">
+				,age = #{age}
+			</if>
+			<if test=" phone !=null and phone !='' ">
+				,phone = #{phone}
+			</if>
+			<if test=" email !=null and email !=''">
+				,email = #{email}
+			</if>
+			<if test=" password !=null and password !='' ">
+				,password = #{password}
+			</if>
+			<if test=" pay !=null and pay !='' ">
+				,pay = #{pay}
+			</if>
+			<if test=" entryTime !=null">
+				,entryTime = #{entryTime}
+			</if>
+			<if test=" headImagePath !=null and headImagePath !='' ">
+				,headImagePath = #{headImagePath}
+			</if>
+		</set>
+		where id = #{id}
+	</update>
+	<!--删除单条数据的方法-->
+	<delete id="deleteUser" parameterType="java.lang.Integer">
+		delete from t_user where id = #{id}
+	</delete>
+	<!--查询总条数-->
+	<select id="findUserByCount" parameterType="com.fh.shop.admin.param.UserSearchParam" resultType="java.lang.Long">
+		select count(*) from t_user tu
+		<include refid="userWhere"></include>
+		order by id desc
+	</select>
+	<!--批量删除-->
+	<delete id="deleteUserByIds" parameterType="java.lang.Integer">
+		delete from t_user where id in
+		<foreach collection="array" item="ids" open="(" separator="," close=")">
+			#{ids}
+		</foreach>
+	</delete>
+	<!--添加用户对应的角色数据到用户角色中间表-->
+	<insert id="addUserOnRole" parameterType="java.util.Map">
+		insert into t_user_role(userId,roleId)
+		values
+		<foreach collection="list" separator="," item="tur">
+			(#{tur.userId},#{tur.roleId})
+		</foreach>
+	</insert>
+	<!--修改查询当前用户对应的角色id集合-->
+	<select id="toUpdateRoleById" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+		select roleId
+		from t_user_role tur
+		where userId=#{id}
+	</select>
+	<!--查询用户对应的角色集合用于展示-->
+	<select id="roleListById" parameterType="java.lang.Long" resultType="java.lang.String">
+		select tr.roleName
+		from t_user_role tur
+		left join t_role tr
+		on tr.id = tur.roleId
+		where tur.userId=#{id}
+	</select>
+	<!--删除当前用户的所有的角色用户中间表数据-->
+	<delete id="deleteRoleByUserId" parameterType="java.lang.Long">
+		delete from t_user_role where userId = #{id}
+	</delete>
+	<!--批量删除用户的角色用户中间表数据-->
+	<delete id="deleteRoleByIds" parameterType="java.lang.Integer">
+		delete from t_user_role where userId in
+		<foreach collection="array" item="ids" open="(" separator="," close=")">
+			#{ids}
+		</foreach>
+	</delete>
+	<!--登录验证-->
+	<select id="login" parameterType="com.fh.shop.admin.po.user.User" resultType="com.fh.shop.admin.po.user.User">
+		select tu.id,tu.userName,tu.realName,tu.password,tu.sex,tu.age,tu.phone,tu.email,tu.pay,
+		tu.entryTime,tu.headImagePath,tu.count,tu.loginTime,tu.loginCount,tu.salt,tu.loginErrorTime
+		from t_user tu
+		where
+		userName = #{userName}
+	</select>
+	<!--登录成功 更改登录次数 和登录时间-->
+	<update id="updateUserTime" parameterType="com.fh.shop.admin.po.user.User">
+		update t_user set
+		count = #{count},loginTime = now()
+		where id=#{id}
+	</update>
+	<!--密码错误 修改连续登陆失败次数和登录错误时间-->
+	<update id="updateUserLoginCount" parameterType="com.fh.shop.admin.po.user.User">
+		update t_user set
+		loginCount = #{loginCount}
+	  	<if test=" loginErrorTime !=null">
+			,loginErrorTime = #{loginErrorTime}
+		</if>
+		<where>
+			<if test=" id!=null">
+				id=#{id}
+			</if>
+		</where>
+	</update>
+	<!--导出数据查询-->
+	<select id="userListExport" parameterType="com.fh.shop.admin.param.UserSearchParam" resultType="com.fh.shop.admin.po.user.User">
+		select tu.id,tu.userName,tu.realName,tu.password,tu.sex,tu.age,tu.phone,tu.email,tu.pay,
+		tu.entryTime,tu.headImagePath,tu.loginCount,tu.area1,tu.area2,tu.area3
+		from t_user tu
+		<include refid="userWhere"></include>
+		order by id desc
+	</select>
+    <!--解锁-->
+    <update id="updateLock" parameterType="java.lang.Long">
+        update t_user set loginCount=0
+        where id=#{id}
+    </update>
+	<!--查询当前输入的邮箱对应的对象是否存在-->
+	<select id="findUserByEmail" parameterType="com.fh.shop.admin.param.UserPasswordParam" resultType="com.fh.shop.admin.po.user.User">
+		select tu.id,tu.userName,tu.realName,tu.password,tu.sex,tu.age,tu.phone,tu.email,tu.pay,
+		tu.entryTime,tu.headImagePath,tu.count,tu.loginTime,tu.loginCount,tu.salt,tu.loginErrorTime
+		from t_user tu
+		where
+		email = #{email}
+	</select>
+	<!--忘记密码 根据邮箱 查到用户后 重置密码-->
+	<update id="resetPassword" parameterType="com.fh.shop.admin.po.user.User">
+		update t_user set password=#{password},loginCount=0
+		where id=#{id}
+	</update>
+	<!--修改密码-->
+	<update id="updatePassword" parameterType="com.fh.shop.admin.param.UserPasswordParam">
+		update t_user set password=#{newPassword}
+		where id=#{userId}
+	</update>
+</mapper>

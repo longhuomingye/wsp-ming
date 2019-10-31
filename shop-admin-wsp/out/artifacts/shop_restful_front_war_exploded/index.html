@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link href="/js/bootstrap3/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/js/DataTables-1.10.18/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <title>品牌展示</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">品牌查询</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" id="userForm">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">品牌名</label>
+                            <div class="col-sm-4">
+                                <input type="email" class="form-control" id="brandName"
+                                       placeholder="请输入品牌名...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div align="center">
+                                <button class="btn btn-primary" type="button" onclick="search()"><i
+                                        class="glyphicon glyphicon-search"></i>提交
+                                </button>
+                                <button class="btn btn-default" type="reset" onclick="resetRoleSelect('select_role')"><i
+                                        class="glyphicon glyphicon-refresh"></i>重置
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div style="text-align: left; background: #e4b9b9;">
+                <button type="button" class="btn btn-primary" onclick="showAddBrand()">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加
+                </button>
+                <button type="button" class="btn btn-primary" onclick="deleteQuanBrand()">
+                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>批量删除
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- datatables -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">品牌列表</div>
+                <table id="example" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>品牌名</th>
+                        <th>品牌图片</th>
+                        <th>热销状态</th>
+                        <th>排序</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody" style="text-align: center;font-weight: bold;"></tbody>
+                    <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>品牌名</th>
+                        <th>品牌图片</th>
+                        <th>热销状态</th>
+                        <th>排序</th>
+                        <th>操作</th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--新增-->
+<span id="addBrandSpan" hidden>
+    <form class="form-horizontal" action="" id="brandForm">
+        <div class="form-group">
+            <label for="add_brandName" class="col-sm-2 control-label">品牌名</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="add_brandName" name="brandName" placeholder="请输出品牌名...">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="add_brandImg" class="col-sm-2 control-label">品牌图片</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="add_brandImg" value="">
+            </div>
+        </div>
+    </form>
+
+</span>
+<!--修改-->
+<span id="updateBrandSpan" hidden>
+    <form class="form-horizontal" action="" id="updateBrandForm">
+        <div class="form-group">
+            <label for="update_brandName" class="col-sm-2 control-label">品牌名</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="update_brandName" id="update_brandName" placeholder="brandName...">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="update_brandImg" class="col-sm-2 control-label">品牌图片</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="update_brandImg" value="">
+            </div>
+        </div>
+    </form>
+
+</span>
+</body>
+<script src="/js/jquery-3.2.1.js"></script>
+<script src="/js/bootstrap3/js/bootstrap.js"></script>
+<script src="/js/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="/js/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+<script src="/js/bootbox/bootbox.min.js"></script>
+<script src="/js/bootbox/bootbox.locales.min.js"></script>
+<script>
+    var addBrandSpan;
+    var updateBrandSpan;
+    var updateBrandHtml;
+    $(function(){
+        findBrand();
+        addBrandSpan = $("#addBrandSpan").html();
+        updateBrandSpan = $('#updateBrandSpan');
+        updateBrandHtml = updateBrandSpan.html();
+        deleteIds();
+    })
+    var table
+    function findBrand(){
+        table = $('#example').DataTable({
+            //语言
+            "language": {
+                "url": "/js/DataTables-1.10.18/Chinese.json"
+            },
+            //自定义每页条数下拉框
+            "lengthMenu": [5, 10, 15],
+            //全局搜索框
+            "searching": false,
+            //排序按钮
+            "ordering": false,
+            //ajax请求从后台查询数据
+            "processing": true,
+            "serverSide": true,
+            "ajax": {
+                "url": "http://127.0.0.1:8080/brands",
+                "type": "get",
+                //过滤后台传过来的数据 只拿自己需要的
+                "dataSrc": function (json) {
+                    //这个json 就是一个变量名
+                    console.log(json.data);
+                    json.draw = json.data.draw;
+                    json.recordsTotal = json.data.recordsTotal;
+                    json.recordsFiltered = json.data.recordsFiltered;
+                    return json.data.data;
+                },
+            },
+            "columns": [
+                {
+                    "data": "id",
+                    "render":function(data){
+                        return '<input type="checkbox" name="ids" value="'+data+'">'
+                    }
+                },
+                {"data": "brandName"},
+                {
+                    "data": "brandImg",
+                    "render":function(data,type,row,meta){
+                        return '<img src="'+data+'" height="150px"/>'
+                    }
+                },
+                {
+                    "data": "sellState",
+                    "render":function(data){
+                        return data==1?"热销":"非热销";
+                    }
+                },
+                {"data": "sort"},
+                {
+                    "data": "id",
+                    "render": function ( data, type, row, meta ) {
+                        return '<div class="btn-group" role="group" aria-label="...">' +
+                            '<button type="button" class="btn btn-info">' +
+                            '    <span class="glyphicon glyphicon-pencil" type="button" aria-hidden="true" onclick="showUpdateBrand('+data+')">修改</span>' +
+                            '</button>' +
+                            '<button type="button" class="btn btn-danger">' +
+                            '    <span class="glyphicon glyphicon-trash" onclick="delBrand('+data+')" aria-hidden="true">删除</span>' +
+                            '</button>'
+                            ;
+                    }
+                }
+            ],
+            "drawCallback": function (settings) {
+                $("#table tbody tr").each(function () {
+                    var v_checkbox = $(this).find("[name='ids']")[0];
+                    if (v_checkbox) {
+                        var id = v_checkbox.value;
+                        if (isExist(id)) {
+                            v_checkbox.checked = true;
+                        }
+                    }
+                })
+            }
+        });
+    }
+    /*刷新*/
+    function search(){
+        var v_param = {};
+        var v_brandName = $("#brandName").val();
+        v_param.brandName = v_brandName;
+        table.settings()[0].ajax.data = v_param;
+        table.ajax.reload();
+    }
+    var dialog;
+    //显示添加弹框
+    function showAddBrand(){
+        dialog = bootbox.dialog({
+            title: '品牌添加',
+            message: addBrandSpan,
+            size: 'large',
+            buttons: {
+                cancel: {
+                    label: "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>&nbsp;取消",
+                    className: 'btn-danger',
+                    callback: function(){
+                        console.log('Custom cancel clicked');
+                    }
+                },
+                ok: {
+                    label: "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>&nbsp;确认",
+                    className: 'btn-info',
+                    callback: function(){
+                        //obj.html("");
+                        var brandName = $("[name=brandName]",dialog).val();//$("[name=brandName]")[1].value
+                        var brandImg = $("#add_brandImg",dialog).val();
+                        var param = {
+                            brandName:brandName,
+                            brandImg:brandImg,
+                        };
+                        $.ajax({
+                            url: 'http://127.0.0.1:8080/brands',
+                            type: 'post',
+                            data: param,
+                            dataType:"json",
+                            success: function (res) {
+                                if(res.code==200){
+                                    table.ajax.reload();
+                                }
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+    //删除品牌
+    function delBrand(id){
+        bootbox.confirm({
+            message: "确认要删除此品牌吗?",
+            buttons: {
+                confirm: {
+                    label: '确认',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: '取消',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if(result){
+                    $.ajax({
+                        url: 'http://127.0.0.1:8080/brands/'+id,
+                        type: 'delete',
+                        success: function (res) {
+                            if(res.code == 200){
+                                table.ajax.reload();
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+    //显示修改弹框
+    function showUpdateBrand(id){
+        $.ajax({
+            url: 'http://127.0.0.1:8080/brands/'+id,
+            type: 'get',
+            success: function (res) {
+                console.log(res)
+                if(res.code == 200){
+                    var v_brand = res.data;
+                    $('#update_brandImg').val(v_brand.brandImg);
+                    $('#update_brandName').val(v_brand.brandName);
+                    dialog = bootbox.dialog({
+                        title: '品牌修改',
+                        message: $('#updateBrandSpan form'),
+                        size: 'large',
+                        buttons: {
+                            cancel: {
+                                label: "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>&nbsp;取消",
+                                className: 'btn-danger',
+                                callback: function(){
+                                    console.log('Custom cancel clicked');
+                                }
+                            },
+                            ok: {
+                                label: "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>&nbsp;确认",
+                                className: 'btn-info',
+                                callback: function(){
+                                    var brandName = $("#update_brandName",dialog).val();//$("[name=brandName]")[1].value
+                                    var brandImg = $("#update_brandImg",dialog).val();
+                                    $.ajax({
+                                        url: 'http://127.0.0.1:8080/brands',
+                                        type: 'PUT',
+                                        //解决 415  不支持application/x-www-form-urlencoded;charset=UTF-8问题
+                                        contentType: "application/json; charset=utf-8",
+                                        //转换为json格式  解决 400 值不对应的问题
+                                        data:JSON.stringify({
+                                            "id":id,"brandName":brandName,"brandImg":brandImg
+                                        }),
+                                        success: function (res) {
+                                            if (res.code == 200) {
+                                                alert("修改成功");
+                                                table.ajax.reload();
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+                        }
+                    });
+                    //还原
+                    updateBrandSpan.html(updateBrandHtml);
+                }
+            }
+        });
+    }
+    //获取复选框的值
+    function deleteIds() {
+        $("#tbody").on("click", "tr", function () {
+            //获取当前的jquery对象
+            var v_checkbox = $(this).find("[name='ids']")[0];
+            var wsp = $(this).attr("wsp");
+            if (!!wsp) {
+                //更改选中状态
+                v_checkbox.checked = false;
+                $(this).removeAttr("wsp");
+                //从数组中移除当前这行数据的id
+                var value = v_checkbox.value;
+                var i = $.inArray(value, ids);
+                ids.splice(i, 1);
+            } else {
+                $(this).attr("wsp", "ok");
+                v_checkbox.checked = true;
+                ids.push(v_checkbox.value);
+            }
+        })
+    }
+    /*判断复选框是否被选中*/
+    function isExist(id) {
+        for (var i = 0; i < ids.length; i++) {
+            if (id == ids[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+    //批量删除
+    var ids = [];
+    function deleteQuanBrand(){
+        if (ids.length > 0) {
+            $.ajax({
+                url: "http://127.0.0.1:8080/brands?ids="+ids.toString()+"",
+                type: "delete",
+                success: function (res) {
+                    if (res.code == 200) {
+                        //刷新
+                        ids = [];
+                        search();
+                    }
+                }
+            })
+        } else {
+            bootbox.alert({
+                message: "<span class='glyphicon glyphicon-exclamation-sign'></span>请选择需要删除的数据",
+                size: 'small',
+                title: "提示信息"
+            });
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="mp-test:war" />
+      <artifact name="shop-admin-w:war" />
+      <artifact name="shop-admin-wang:war" />
+      <artifact name="shop-admin-wsp:war" />
+      <artifact name="shop-admin-wsp:war exploded" />
+      <artifact name="shop-api:war exploded" />
+      <artifact name="shop-portal:war exploded" />
+      <artifact name="shop-restful-front:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/../shop-api/src/main/java/com/fh/shop/api/util/KeyUtil.java" line="8" mnemonic="5" />
+    <bookmark url="file://$PROJECT_DIR$/../shop-api/src/main/java/com/fh/shop/api/weixin/HttpUtil.java" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4522f282-abeb-4f89-9a4d-085d3a32c1dd" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-admin-wsp-V2/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-admin-wsp-V2/shop-admin-wsp-V3/target/" />
+    <ignored path="$PROJECT_DIR$/../shopadminwspV2/target/" />
+    <ignored path="$PROJECT_DIR$/shop-admin-wsp-V3/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-admin-wsp-v3/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-admin-w/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-admin-wang/target/" />
+    <ignored path="$PROJECT_DIR$/../mp-wsp/target/" />
+    <ignored path="$PROJECT_DIR$/../mp-wsp-test/target/" />
+    <ignored path="$PROJECT_DIR$/../test/target/" />
+    <ignored path="$PROJECT_DIR$/../mp-test/target/" />
+    <ignored path="$PROJECT_DIR$/../car-admin/target/" />
+    <ignored path="$PROJECT_DIR$/../car-test/target/" />
+    <ignored path="$PROJECT_DIR$/../jpa-test/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-api/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-api-v2/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-api-brand/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-api-springboot/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-portal-springboot/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-api-sb/target/" />
+    <ignored path="$PROJECT_DIR$/../shop-portal-sb/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/shop_admin_wsp$shop_api.ic" NAME="shop-api Coverage Results" MODIFIED="1572417689343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shop_admin_wsp$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1570115457075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shop_admin_wsp$shop_admin.ic" NAME="shop-admin Coverage Results" MODIFIED="1571310403937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shop_admin_wsp$testBook_ssss.ic" NAME="testBook.ssss Coverage Results" MODIFIED="1571016378186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/shop_admin_wsp$Md5Util.ic" NAME="Md5Util Coverage Results" MODIFIED="1567484289653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.fh.shop.admin.util.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/shop_admin_wsp$ShopApiSpringbootApplication.ic" NAME="ShopApiSpringbootApplication Coverage Results" MODIFIED="1572515997698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="shop-admin-wsp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MybatisPlusConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/MybatisPlusConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+        <option value="Jsp File" />
+        <option value="Enum" />
+        <option value="XSLT Stylesheet" />
+        <option value="FxmlFile" />
+        <option value="JavaScript File" />
+        <option value="AnnotationType" />
+        <option value="HTML File" />
+        <option value="yet_unknown" />
+        <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>addressName</find>
+      <find>update</find>
+      <find>updatePr</find>
+      <find>toup</find>
+      <find>update_Category</find>
+      <find>delete</find>
+      <find>del</find>
+      <find>alias</find>
+      <find>phone</find>
+      <find>0.1</find>
+      <find>baomidou</find>
+      <find>myb</find>
+      <find>druid</find>
+      <find>fastjson</find>
+      <find>springframework</find>
+      <find>org.apache.http</find>
+      <find>javax.mail</find>
+      <find>google.zxing</find>
+      <find>org.apache.commons</find>
+      <find>lang</find>
+      <find>jdom2</find>
+      <find>redis.clients</find>
+      <find>mybatis</find>
+      <find>Jedis</find>
+      <find>interc</find>
+      <find>interceptor</find>
+      <find>addArgum</find>
+      <find>addinte</find>
+      <find>addargu</find>
+      <find>callback</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\fh\1902B\final\1902ming\shop-api\src\main\java\com\fh\shop\api\area\controller</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../shop-api-brand/src/main/java/com/fh/shop/api/brand/mapper/IBrandMapper.java" />
+        <option value="$PROJECT_DIR$/../shop-portal/web/getOrderInfo-student.html" />
+        <option value="$PROJECT_DIR$/../shop-api-brand/src/main/java/com/fh/shop/api/brand/controller/BrandController.java" />
+        <option value="$PROJECT_DIR$/../shop-api-brand/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../shop-api-brand/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/../shop-api-brand/src/main/java/com/fh/shop/api/brand/biz/IBrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-brand/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/sdk/WXPayXmlUtil.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/util/MyConfig.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/weixin/WeixinPay.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/pay/biz/IPayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/resources/mybatis/spring-common.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/address/mapper/IAddressMapper.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/resources/mybatis/mybtis-config.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/address/biz/IAddressService.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/area/biz/IAreaServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/brand/biz/IBrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/category/biz/ICategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/Idempotent/biz/IdemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/member/biz/IMemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/order/biz/IOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/product/biz/IProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/ShopApiSpringbootApplication.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/cart/biz/ICartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/address/biz/IAddressServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/Interceptor/IdemInterceptor.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/Interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/common/MemberVoArgumentResolver.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/test/java/com/fh/shop/api/Test.java" />
+        <option value="$PROJECT_DIR$/../shop-portal-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/util/RedisPool.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/test/java/com/fh/shop/portal/ShopPortalSpringbootApplicationTests.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/util/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/pay/IPayLogMapper.java" />
+        <option value="$PROJECT_DIR$/../shop-api-sb/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-sb/src/main/java/sdk/WXPayReport.java" />
+        <option value="$PROJECT_DIR$/../shop-api-sb/src/main/java/github/wxpay/sdk/WXPayReport.java" />
+        <option value="$PROJECT_DIR$/../shop-api-sb/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../shop-api-sb/src/main/java/ShopApiSbApplication.java" />
+        <option value="$PROJECT_DIR$/../shop-api-sb/src/main/java/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/../shop-api-sb/src/main/java/com/fh/shop/api/Interceptor/IdemInterceptor.java" />
+        <option value="$PROJECT_DIR$/../shop-portal-sb/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-portal-sb/src/test/java/com/fh/shop/portal/ShopPortalSbApplicationTests.java" />
+        <option value="$PROJECT_DIR$/../shop-portal-sb/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/member/controller/MemberController.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/ShopApiSpringbootApplication.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/product/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/MybatisPlusConfig.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\fh\1902B\mavenCK" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../gongju/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\fh\gongju\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="260" />
+    <option name="y" value="15" />
+    <option name="width" value="1750" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="toupdate&#9;PSI&#9;JAVA://org.bouncycastle.crypto.tls.TlsOuputStream" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="packageLocal" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop-portal-sb/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.splitter.proportion" value="0.28336558" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.fh.shop.api.brand.biz" />
+      <recent name="com.fh.shop.api.pay.biz" />
+      <recent name="com.fh.shop.api.sdk.biz" />
+      <recent name="com.fh.shop.api.sdk" />
+      <recent name="com.fh.shop.api.Idempotent.biz" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\fh\1902B\final\1902ming\shop-portal-sb\src\main\resources\static" />
+      <recent name="D:\fh\1902B\final\1902ming\shop-api-sb\src\main\resources" />
+      <recent name="D:\fh\1902B\final\1902ming\shop-api-sb\src\main\java" />
+      <recent name="D:\fh\1902B\final\1902ming\shop-api-sb\src\main\java\com\fh\shop\api" />
+      <recent name="D:\fh\1902B\final\1902ming\shop-api-springboot\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.fh.shop.api.util" />
+      <recent name="com.fh.shop.api.common" />
+      <recent name="com.fh.shop.api.product.common" />
+      <recent name="com.fh.jpa.common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\fh\1902B\final\1902ming\shop-api-springboot\src\main\resources" />
+      <recent name="D:\fh\1902B\final\1902ming\shop-portal\web" />
+      <recent name="D:\fh\1902B\final\1902ming\mp-test\src\main\webapp" />
+      <recent name="D:\fh\1902B\final\1902ming\mp-test\src\main\resources" />
+      <recent name="D:\fh\1902B\final\1902ming\shop-admin-wsp\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ShopApiSpringbootApplication">
+    <configuration name="NoteUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fh.shop.api.util.NoteUtil" />
+      <module name="shop-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fh.shop.api.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="UserController" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fh.shop.admin.controller.user.UserController" />
+      <module name="shop-admin-wsp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fh.shop.admin.controller.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestProdcut.deleteByid" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="shop-admin-wsp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fh.shop.admin.biz.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.fh.shop.admin.biz.product" />
+      <option name="MAIN_CLASS_NAME" value="com.fh.shop.admin.biz.product.TestProdcut" />
+      <option name="METHOD_NAME" value="deleteByid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="test.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop-api" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="t" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="test.t1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop-api" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="t1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="shop-admin-wsp-V2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="ShopApiBrandApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shop-api-brand" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fh.shop.api.brand.ShopApiBrandApplication" />
+    </configuration>
+    <configuration name="ShopApiSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="shop-api-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ShopApiSpringbootApplication" />
+    </configuration>
+    <configuration name="ShopPortalSbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="shop-portal-sb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fh.shop.portal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fh.shop.portal.ShopPortalSbApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.52" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shop-admin-wsp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_shop-admin-wsp" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51590" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shop-admin-wsp:war" />
+          <artifact name="shop-admin-w:war" />
+          <artifact name="shop-admin-wang:war" />
+          <artifact name="mp-test:war" />
+          <artifact name="shop-api:war exploded" />
+          <artifact name="shop-portal:war exploded" />
+          <artifact name="shop-restful-front:war exploded" />
+          <artifact name="shop-admin-wsp:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51599" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+    </configuration>
+    <configuration name="shop-admin" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.52" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shop-admin-wsp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_(1)_shop-admin-wsp" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1091" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51590" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <configuration name="shop-api" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.52" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shop-api:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_shop-admin-wsp" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51590" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <configuration name="shop-portal" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.52" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8082/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shop-portal:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_(1)_shop-admin-wsp_2" />
+        <option name="HTTP_PORT" value="8082" />
+        <option name="JNDI_PORT" value="1092" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51590" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <configuration name="shop-restful-front" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.52" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8083/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="shop-restful-front:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_shop-admin-wsp_2" />
+        <option name="HTTP_PORT" value="8083" />
+        <option name="JNDI_PORT" value="1093" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51590" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <list>
+      <item itemvalue="Application.UserController" />
+      <item itemvalue="JUnit.TestProdcut.deleteByid" />
+      <item itemvalue="Spring Boot.ShopApiBrandApplication" />
+      <item itemvalue="Tomcat Server.shop-api" />
+      <item itemvalue="Tomcat Server.shop-restful-front" />
+      <item itemvalue="Tomcat Server.shop-portal" />
+      <item itemvalue="Tomcat Server.shop-admin" />
+      <item itemvalue="Application.NoteUtil" />
+      <item itemvalue="JUnit.test.t" />
+      <item itemvalue="JUnit.test.t1" />
+      <item itemvalue="Spring Boot.ShopApiSpringbootApplication" />
+      <item itemvalue="Spring Boot.ShopPortalSbApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ShopApiSpringbootApplication" />
+        <item itemvalue="Spring Boot.ShopPortalSbApplication" />
+        <item itemvalue="JUnit.test.t1" />
+        <item itemvalue="JUnit.test.t" />
+        <item itemvalue="Application.NoteUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4522f282-abeb-4f89-9a4d-085d3a32c1dd" name="Default" comment="" />
+      <created>1565779558303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565779558303</updated>
+      <workItem from="1565779560710" duration="10384000" />
+      <workItem from="1565790460550" duration="7020000" />
+      <workItem from="1565797519709" duration="436000" />
+      <workItem from="1565797972025" duration="552000" />
+      <workItem from="1565823379196" duration="3671000" />
+      <workItem from="1565832519410" duration="11218000" />
+      <workItem from="1565843906907" duration="22828000" />
+      <workItem from="1565881033669" duration="371000" />
+      <workItem from="1565881560557" duration="215000" />
+      <workItem from="1565934194290" duration="74000" />
+      <workItem from="1566092250216" duration="2393000" />
+      <workItem from="1566120795358" duration="7821000" />
+      <workItem from="1566130690622" duration="2457000" />
+      <workItem from="1566190021576" duration="938000" />
+      <workItem from="1566193975028" duration="22039000" />
+      <workItem from="1566225821303" duration="1376000" />
+      <workItem from="1566227877842" duration="163000" />
+      <workItem from="1566262834509" duration="4738000" />
+      <workItem from="1566280370178" duration="6190000" />
+      <workItem from="1566296754941" duration="14411000" />
+      <workItem from="1566312987386" duration="3890000" />
+      <workItem from="1566345324115" duration="210000" />
+      <workItem from="1566350002635" duration="1870000" />
+      <workItem from="1566366743843" duration="5364000" />
+      <workItem from="1566383333062" duration="20443000" />
+      <workItem from="1566405299103" duration="117000" />
+      <workItem from="1566431636760" duration="23934000" />
+      <workItem from="1566464139536" duration="2623000" />
+      <workItem from="1566469484062" duration="10870000" />
+      <workItem from="1566480660785" duration="4925000" />
+      <workItem from="1566522343729" duration="3472000" />
+      <workItem from="1566528904570" duration="889000" />
+      <workItem from="1566530784527" duration="6799000" />
+      <workItem from="1566654715762" duration="8060000" />
+      <workItem from="1566664552526" duration="93000" />
+      <workItem from="1566664718120" duration="94000" />
+      <workItem from="1566665062095" duration="278000" />
+      <workItem from="1566665376973" duration="493000" />
+      <workItem from="1566687862842" duration="16987000" />
+      <workItem from="1566712426145" duration="17853000" />
+      <workItem from="1566742848173" duration="976000" />
+      <workItem from="1566783190701" duration="1640000" />
+      <workItem from="1566791604810" duration="1125000" />
+      <workItem from="1566794711588" duration="135000" />
+      <workItem from="1566795503015" duration="20000" />
+      <workItem from="1566800377017" duration="7997000" />
+      <workItem from="1566815164273" duration="5010000" />
+      <workItem from="1566833014471" duration="466000" />
+      <workItem from="1566869488406" duration="3054000" />
+      <workItem from="1566876950658" duration="20094000" />
+      <workItem from="1566909498603" duration="27000" />
+      <workItem from="1566909561640" duration="5845000" />
+      <workItem from="1566915527045" duration="66000" />
+      <workItem from="1566915714536" duration="719000" />
+      <workItem from="1566918839731" duration="130000" />
+      <workItem from="1566952941824" duration="1710000" />
+      <workItem from="1566956965268" duration="1730000" />
+      <workItem from="1566965175986" duration="256000" />
+      <workItem from="1566965691696" duration="2761000" />
+      <workItem from="1566973945903" duration="2957000" />
+      <workItem from="1566987947572" duration="9761000" />
+      <workItem from="1567040223831" duration="4805000" />
+      <workItem from="1567050890107" duration="620000" />
+      <workItem from="1567058058405" duration="1314000" />
+      <workItem from="1567065126214" duration="852000" />
+      <workItem from="1567067757026" duration="4581000" />
+      <workItem from="1567074382769" duration="17758000" />
+      <workItem from="1567122723060" duration="21540000" />
+      <workItem from="1567258988944" duration="14298000" />
+      <workItem from="1567292508991" duration="1115000" />
+      <workItem from="1567300996924" duration="8244000" />
+      <workItem from="1567312640639" duration="1836000" />
+      <workItem from="1567318658568" duration="4398000" />
+      <workItem from="1567323759699" duration="1610000" />
+      <workItem from="1567329797360" duration="628000" />
+      <workItem from="1567330656841" duration="1264000" />
+      <workItem from="1567333536871" duration="5904000" />
+      <workItem from="1567339596815" duration="526000" />
+      <workItem from="1567340175752" duration="188000" />
+      <workItem from="1567341126482" duration="1093000" />
+      <workItem from="1567353584637" duration="302000" />
+      <workItem from="1567353906249" duration="188000" />
+      <workItem from="1567382081372" duration="13100000" />
+      <workItem from="1567397247516" duration="13344000" />
+      <workItem from="1567419910732" duration="12602000" />
+      <workItem from="1567437733860" duration="1271000" />
+      <workItem from="1567473470587" duration="13123000" />
+      <workItem from="1567487822781" duration="46000" />
+      <workItem from="1567489818960" duration="3412000" />
+      <workItem from="1567495232473" duration="694000" />
+      <workItem from="1567496009315" duration="17132000" />
+      <workItem from="1567559486836" duration="1262000" />
+      <workItem from="1567561958860" duration="628000" />
+      <workItem from="1567563712294" duration="935000" />
+      <workItem from="1567564807966" duration="1215000" />
+      <workItem from="1567573341795" duration="472000" />
+      <workItem from="1567576390521" duration="8762000" />
+      <workItem from="1567585721782" duration="12165000" />
+      <workItem from="1567600326090" duration="548000" />
+      <workItem from="1567601637978" duration="861000" />
+      <workItem from="1567605392363" duration="172000" />
+      <workItem from="1567605710521" duration="8000" />
+      <workItem from="1567613362013" duration="244000" />
+      <workItem from="1567641649439" duration="11736000" />
+      <workItem from="1567664926088" duration="21276000" />
+      <workItem from="1567693154174" duration="37000" />
+      <workItem from="1567725754943" duration="44000" />
+      <workItem from="1567727120958" duration="48000" />
+      <workItem from="1567727882898" duration="129000" />
+      <workItem from="1567734051922" duration="2496000" />
+      <workItem from="1567744630132" duration="133000" />
+      <workItem from="1567745897363" duration="52000" />
+      <workItem from="1567746981480" duration="19000" />
+      <workItem from="1567747574978" duration="1021000" />
+      <workItem from="1567851605676" duration="12192000" />
+      <workItem from="1567869310260" duration="1730000" />
+      <workItem from="1567871068122" duration="1159000" />
+      <workItem from="1567872292088" duration="7000" />
+      <workItem from="1567897540284" duration="2026000" />
+      <workItem from="1567904555095" duration="1900000" />
+      <workItem from="1567912976202" duration="445000" />
+      <workItem from="1567913815285" duration="4839000" />
+      <workItem from="1567923665217" duration="1443000" />
+      <workItem from="1567935720976" duration="1085000" />
+      <workItem from="1567938406815" duration="2678000" />
+      <workItem from="1567952149298" duration="3716000" />
+      <workItem from="1567993947557" duration="1677000" />
+      <workItem from="1567997235352" duration="11359000" />
+      <workItem from="1568018119667" duration="1378000" />
+      <workItem from="1568021192232" duration="1744000" />
+      <workItem from="1568024870168" duration="4283000" />
+      <workItem from="1568029343057" duration="7520000" />
+      <workItem from="1568037044533" duration="742000" />
+      <workItem from="1568076966580" duration="17000" />
+      <workItem from="1568078138305" duration="7990000" />
+      <workItem from="1568109379901" duration="456000" />
+      <workItem from="1568111133418" duration="13051000" />
+      <workItem from="1568129389920" duration="355000" />
+      <workItem from="1568161555874" duration="1601000" />
+      <workItem from="1568168100370" duration="200000" />
+      <workItem from="1568171587853" duration="1538000" />
+      <workItem from="1568174751063" duration="1447000" />
+      <workItem from="1568182658688" duration="2755000" />
+      <workItem from="1568185442226" duration="2091000" />
+      <workItem from="1568191826701" duration="200000" />
+      <workItem from="1568194473193" duration="1305000" />
+      <workItem from="1568197446555" duration="3832000" />
+      <workItem from="1568202965367" duration="3658000" />
+      <workItem from="1568250028723" duration="506000" />
+      <workItem from="1568255354804" duration="10000" />
+      <workItem from="1568284659031" duration="5033000" />
+      <workItem from="1568297064718" duration="1032000" />
+      <workItem from="1568331341665" duration="325000" />
+      <workItem from="1568334893410" duration="3126000" />
+      <workItem from="1568472041763" duration="461000" />
+      <workItem from="1568477096277" duration="295000" />
+      <workItem from="1568477552155" duration="1394000" />
+      <workItem from="1568480545472" duration="34000" />
+      <workItem from="1568480967099" duration="4000" />
+      <workItem from="1568502477430" duration="248000" />
+      <workItem from="1568502976380" duration="764000" />
+      <workItem from="1568507056403" duration="746000" />
+      <workItem from="1568508620244" duration="946000" />
+      <workItem from="1568516482213" duration="198000" />
+      <workItem from="1568519609811" duration="2214000" />
+      <workItem from="1568528436151" duration="2895000" />
+      <workItem from="1568532212346" duration="4994000" />
+      <workItem from="1568537269085" duration="9590000" />
+      <workItem from="1568546898406" duration="672000" />
+      <workItem from="1568547593339" duration="38000" />
+      <workItem from="1568548821582" duration="11955000" />
+      <workItem from="1568590970449" duration="1941000" />
+      <workItem from="1568593049696" duration="11754000" />
+      <workItem from="1568613231088" duration="8946000" />
+      <workItem from="1568633359420" duration="181000" />
+      <workItem from="1568633615624" duration="658000" />
+      <workItem from="1568635949893" duration="11416000" />
+      <workItem from="1568677612208" duration="5158000" />
+      <workItem from="1568699525578" duration="5286000" />
+      <workItem from="1568875092047" duration="222000" />
+      <workItem from="1569053656229" duration="529000" />
+      <workItem from="1569054247451" duration="5063000" />
+      <workItem from="1569727183095" duration="3051000" />
+      <workItem from="1569802746335" duration="134000" />
+      <workItem from="1569802897984" duration="196000" />
+      <workItem from="1569803174468" duration="180000" />
+      <workItem from="1569803393361" duration="62000" />
+      <workItem from="1569803493185" duration="5358000" />
+      <workItem from="1569819678477" duration="7049000" />
+      <workItem from="1569929096212" duration="2701000" />
+      <workItem from="1569976095480" duration="450000" />
+      <workItem from="1569976637067" duration="49000" />
+      <workItem from="1569995431520" duration="4524000" />
+      <workItem from="1570001370177" duration="3540000" />
+      <workItem from="1570006664824" duration="1662000" />
+      <workItem from="1570058767767" duration="462000" />
+      <workItem from="1570069275334" duration="25000" />
+      <workItem from="1570069389214" duration="72000" />
+      <workItem from="1570069476211" duration="1742000" />
+      <workItem from="1570071249403" duration="2224000" />
+      <workItem from="1570075996326" duration="638000" />
+      <workItem from="1570076676327" duration="662000" />
+      <workItem from="1570077374521" duration="330000" />
+      <workItem from="1570077825167" duration="210000" />
+      <workItem from="1570078077967" duration="227000" />
+      <workItem from="1570078411895" duration="4727000" />
+      <workItem from="1570095150934" duration="575000" />
+      <workItem from="1570095797511" duration="481000" />
+      <workItem from="1570096336439" duration="207000" />
+      <workItem from="1570096583478" duration="72000" />
+      <workItem from="1570098176183" duration="288000" />
+      <workItem from="1570098540412" duration="744000" />
+      <workItem from="1570099310738" duration="728000" />
+      <workItem from="1570100065799" duration="806000" />
+      <workItem from="1570100963202" duration="121000" />
+      <workItem from="1570101281768" duration="11769000" />
+      <workItem from="1570113492034" duration="2112000" />
+      <workItem from="1570152097713" duration="2735000" />
+      <workItem from="1570156737520" duration="2054000" />
+      <workItem from="1570161921321" duration="2813000" />
+      <workItem from="1570165921433" duration="1154000" />
+      <workItem from="1570265347234" duration="992000" />
+      <workItem from="1570284192296" duration="2045000" />
+      <workItem from="1570286258740" duration="149000" />
+      <workItem from="1570286426003" duration="28000" />
+      <workItem from="1570286470164" duration="677000" />
+      <workItem from="1570318951011" duration="67000" />
+      <workItem from="1570326592330" duration="8000" />
+      <workItem from="1570326946447" duration="61000" />
+      <workItem from="1570333635134" duration="1016000" />
+      <workItem from="1570347935232" duration="199000" />
+      <workItem from="1570350389444" duration="593000" />
+      <workItem from="1570350998788" duration="5500000" />
+      <workItem from="1570357654645" duration="1020000" />
+      <workItem from="1570359997639" duration="7631000" />
+      <workItem from="1570371040676" duration="13000" />
+      <workItem from="1570371069530" duration="1821000" />
+      <workItem from="1570413065279" duration="7033000" />
+      <workItem from="1570427361364" duration="5000000" />
+      <workItem from="1570435699997" duration="1898000" />
+      <workItem from="1570439014527" duration="2874000" />
+      <workItem from="1570446875785" duration="36000" />
+      <workItem from="1570449625265" duration="6107000" />
+      <workItem from="1570490580720" duration="3630000" />
+      <workItem from="1570540155987" duration="991000" />
+      <workItem from="1570541596601" duration="327000" />
+      <workItem from="1570541941721" duration="644000" />
+      <workItem from="1570547312445" duration="566000" />
+      <workItem from="1570550073343" duration="30000" />
+      <workItem from="1570585009827" duration="3462000" />
+      <workItem from="1570602103571" duration="5694000" />
+      <workItem from="1570614633810" duration="19961000" />
+      <workItem from="1570638761100" duration="442000" />
+      <workItem from="1570663276588" duration="4193000" />
+      <workItem from="1570676000319" duration="99000" />
+      <workItem from="1570677548814" duration="217000" />
+      <workItem from="1570678988485" duration="8018000" />
+      <workItem from="1570701079009" duration="3907000" />
+      <workItem from="1570712993823" duration="4121000" />
+      <workItem from="1570750363426" duration="3819000" />
+      <workItem from="1570771149195" duration="1357000" />
+      <workItem from="1570874631128" duration="2988000" />
+      <workItem from="1570886899529" duration="7342000" />
+      <workItem from="1570922657247" duration="11828000" />
+      <workItem from="1570946333890" duration="22000" />
+      <workItem from="1570947075902" duration="11302000" />
+      <workItem from="1570962336278" duration="12810000" />
+      <workItem from="1571015790729" duration="140000" />
+      <workItem from="1571015950894" duration="6373000" />
+      <workItem from="1571042319391" duration="258000" />
+      <workItem from="1571049203186" duration="16273000" />
+      <workItem from="1571066390984" duration="1608000" />
+      <workItem from="1571097043118" duration="75000" />
+      <workItem from="1571102233223" duration="3392000" />
+      <workItem from="1571140273949" duration="2736000" />
+      <workItem from="1571143589484" duration="12000" />
+      <workItem from="1571147488516" duration="5296000" />
+      <workItem from="1571153846743" duration="52000" />
+      <workItem from="1571155252644" duration="78000" />
+      <workItem from="1571189619489" duration="310000" />
+      <workItem from="1571223846732" duration="11006000" />
+      <workItem from="1571236072763" duration="671000" />
+      <workItem from="1571239847497" duration="34000" />
+      <workItem from="1571240558704" duration="179000" />
+      <workItem from="1571241220098" duration="21000" />
+      <workItem from="1571275952303" duration="3490000" />
+      <workItem from="1571293281302" duration="2812000" />
+      <workItem from="1571296297170" duration="1508000" />
+      <workItem from="1571307901001" duration="3719000" />
+      <workItem from="1571314431023" duration="9758000" />
+      <workItem from="1571354159776" duration="1034000" />
+      <workItem from="1571361112105" duration="527000" />
+      <workItem from="1571369884257" duration="3975000" />
+      <workItem from="1571473393894" duration="37000" />
+      <workItem from="1571500405346" duration="118000" />
+      <workItem from="1571528638966" duration="620000" />
+      <workItem from="1571534967263" duration="848000" />
+      <workItem from="1571545175565" duration="8061000" />
+      <workItem from="1571557256061" duration="17764000" />
+      <workItem from="1571586692064" duration="41000" />
+      <workItem from="1571587615173" duration="757000" />
+      <workItem from="1571620761079" duration="439000" />
+      <workItem from="1571638800537" duration="4534000" />
+      <workItem from="1571651454494" duration="19052000" />
+      <workItem from="1571706137026" duration="2737000" />
+      <workItem from="1571725046766" duration="8052000" />
+      <workItem from="1571736219303" duration="11557000" />
+      <workItem from="1571756226450" duration="2070000" />
+      <workItem from="1571761471089" duration="100000" />
+      <workItem from="1571787175166" duration="271000" />
+      <workItem from="1571794091395" duration="406000" />
+      <workItem from="1571806778308" duration="575000" />
+      <workItem from="1571812295334" duration="14254000" />
+      <workItem from="1571833431960" duration="4700000" />
+      <workItem from="1571839988758" duration="3645000" />
+      <workItem from="1571843871190" duration="883000" />
+      <workItem from="1571880413238" duration="539000" />
+      <workItem from="1571891770948" duration="1710000" />
+      <workItem from="1571896205583" duration="23533000" />
+      <workItem from="1571930175343" duration="5518000" />
+      <workItem from="1571961134467" duration="4642000" />
+      <workItem from="1572083369446" duration="2877000" />
+      <workItem from="1572097431552" duration="12047000" />
+      <workItem from="1572146242864" duration="7170000" />
+      <workItem from="1572172044722" duration="5766000" />
+      <workItem from="1572227930101" duration="10713000" />
+      <workItem from="1572241829497" duration="7098000" />
+      <workItem from="1572262792267" duration="5046000" />
+      <workItem from="1572268322705" duration="242000" />
+      <workItem from="1572268587663" duration="40000" />
+      <workItem from="1572268683361" duration="240000" />
+      <workItem from="1572268976161" duration="31000" />
+      <workItem from="1572269027755" duration="183000" />
+      <workItem from="1572269262937" duration="37000" />
+      <workItem from="1572269389933" duration="23000" />
+      <workItem from="1572269447171" duration="9627000" />
+      <workItem from="1572281429221" duration="134000" />
+      <workItem from="1572281597368" duration="59000" />
+      <workItem from="1572281672865" duration="139000" />
+      <workItem from="1572281837480" duration="182000" />
+      <workItem from="1572282199279" duration="413000" />
+      <workItem from="1572303860906" duration="179000" />
+      <workItem from="1572304094034" duration="170000" />
+      <workItem from="1572304355100" duration="49000" />
+      <workItem from="1572304437683" duration="311000" />
+      <workItem from="1572304779087" duration="32000" />
+      <workItem from="1572304829016" duration="37000" />
+      <workItem from="1572304922232" duration="209000" />
+      <workItem from="1572305227597" duration="200000" />
+      <workItem from="1572305711463" duration="189000" />
+      <workItem from="1572305988886" duration="5061000" />
+      <workItem from="1572328155317" duration="20760000" />
+      <workItem from="1572366076797" duration="738000" />
+      <workItem from="1572395915448" duration="1390000" />
+      <workItem from="1572399828145" duration="8479000" />
+      <workItem from="1572430172668" duration="4221000" />
+      <workItem from="1572440300001" duration="482000" />
+      <workItem from="1572440800228" duration="4030000" />
+      <workItem from="1572478059865" duration="690000" />
+      <workItem from="1572486231882" duration="710000" />
+      <workItem from="1572494123466" duration="3841000" />
+      <workItem from="1572502944082" duration="11285000" />
+      <workItem from="1572517365282" duration="3625000" />
+      <workItem from="1572521020592" duration="361000" />
+      <workItem from="1572521399335" duration="620000" />
+      <workItem from="1572522055135" duration="9720000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="test_t - 2019.10.29 at 17h 38m 48s.xml">
+      <configuration name="test.t" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t - 2019.10.29 at 17h 39m 03s.xml">
+      <configuration name="test.t" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t1 - 2019.10.29 at 17h 41m 47s.xml">
+      <configuration name="test.t1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t1 - 2019.10.29 at 17h 42m 16s.xml">
+      <configuration name="test.t1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t1 - 2019.10.29 at 17h 42m 34s.xml">
+      <configuration name="test.t1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t1 - 2019.10.29 at 17h 43m 00s.xml">
+      <configuration name="test.t1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t1 - 2019.10.29 at 22h 25m 49s.xml">
+      <configuration name="test.t1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t - 2019.10.29 at 22h 26m 09s.xml">
+      <configuration name="test.t" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t1 - 2019.10.29 at 22h 59m 48s.xml">
+      <configuration name="test.t1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_t1 - 2019.10.30 at 00h 30m 38s.xml">
+      <configuration name="test.t1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1319870000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.4953083" weight="0.3286517" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49934897" weight="0.41573033" />
+      <window_info anchor="right" id="Palette&#9;" order="0" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" sideWeight="0.49932975" weight="0.3286517" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5127346" side_tool="true" weight="0.49016854" />
+      <window_info anchor="right" id="Maven Projects" order="6" sideWeight="0.4985955" weight="0.32573727" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49061662" weight="0.3300562" />
+      <window_info anchor="bottom" id="Spring" order="0" sideWeight="0.49463806" weight="0.3286517" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.5087131" side_tool="true" weight="0.4255618" />
+      <window_info id="Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48870638" visible="true" weight="0.2580429" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
+      <window_info id="Web" order="2" sideWeight="0.51129365" side_tool="true" weight="0.24530831" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3297587" />
+      <window_info id="Structure" order="1" sideWeight="0.5070225" side_tool="true" weight="0.34852546" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.5055928" side_tool="true" weight="0.27010724" />
+      <window_info active="true" anchor="bottom" x="22" y="279" width="1492" height="276" id="Debug" order="3" sideWeight="0.4872654" visible="true" weight="0.38342696" />
+      <window_info anchor="right" id="Coverage" order="3" sideWeight="0.5014045" side_tool="true" weight="0.32573727" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="11" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../jpa-test/src/main/java/com/fh/jpa/controller/book/BookController.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="1002" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../shop-admin-w/src/main/java/com/fh/shop/admin/util/FileUtil.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="1136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../jpa-test/src/test/java/testBook.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="1205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../shop-api/src/main/java/com/fh/shop/api/order/biz/IOrderServiceImpl.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="1557" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/../shop-admin-w/src/main/java/com/fh/shop/admin/util/FileUtil.java</url>
+          <line>108</line>
+          <properties class="com.fh.shop.admin.util.FileUtil" method="buildExcelto">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1135" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1573" />
+    </breakpoint-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;/wealth/findWealthByUserId.jhtml&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>requestURI</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wealth</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/pay/biz/IPayServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-brand/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/handler/HandlerInterceptorAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/brand/controller/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/cart/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/cart/biz/ICartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/cart/biz/ICartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api/src/main/resources/spring/spring-mvc-controller.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/Interceptor/IdemInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="387" column="4" selection-start-line="387" selection-start-column="4" selection-end-line="388" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/Interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/common/MemberVoArgumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/common/DataTableResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-portal-springboot/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/address/biz/IAddressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/address/biz/IAddressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/shop-api-springboot.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/util/RedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api/src/main/java/com/fh/shop/api/util/RedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/test/java/com/fh/shop/api/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/test/java/com/fh/shop/portal/ShopPortalSpringbootApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api/src/main/java/com/fh/shop/api/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="40" lean-forward="true" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/target/classes/com/fh/shop/api/address/biz/IAddressServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/pay/IPayLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-sb/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-sb/src/main/java/github/wxpay/sdk/IWXPayDomain.java" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-sb/src/main/resources/mappers/BrandMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-sb/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-sb/src/main/java/ShopApiSbApplication.java" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-sb/src/main/java/MybatisPlusConfig.java" />
+    <entry file="file://$PROJECT_DIR$/../shop-api-sb/src/main/java/com/fh/shop/api/Interceptor/IdemInterceptor.java" />
+    <entry file="file://$PROJECT_DIR$/../shop-portal-sb/src/main/resources/static/js/shop/js/model/cartModel.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-portal-sb/src/main/resources/static/cart-student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5516">
+          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-portal-sb/src/main/resources/static/getOrderInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-portal-sb/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-portal-sb/src/test/java/com/fh/shop/portal/ShopPortalSbApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-portal-sb/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-portal-sb/src/main/java/com/fh/shop/portal/ShopPortalSbApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE.jar!/org/springframework/scheduling/annotation/Scheduled.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/product/biz/IProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/product/biz/IProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="10" column="35" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="124" column="19" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="124" selection-end-column="19" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/ShopApiSpringbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/product/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/member/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+          <folding>
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>shop-admin-wsp-V2:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>shop-api-springboot</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: c3p0:c3p0:0.9.1.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$/../shop-api-springboot" />
+    <option value="clean package -Dmaven.test.skip=true" />
+    <option value="clean package" />
+    <option value="clean package -X" />
+    <option value="clean package -Pdev" />
+    <option value="clean package -Ptest" />
+    <option value="clean compile -dev" />
+    <option value="clean package -Dmaven.test.-skip=true" />
+    <option value="clean package-Dmaven-test.-skip=true" />
+  </component>
+</project>

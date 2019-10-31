@@ -1,0 +1,4 @@
+@CHARSET "UTF-8";
+.bonStyle{height:70px;width: 80px;background-color: #ccc;font-size: 15px;color: red}
+.bonStyleover{height:70px;width: 80px;background-color: #ccc;font-size: 15px;color: red;border-color: #8000ff}
+.bonStyleclick{height:70px;width: 80px;background-color: #00ffff;font-size: 15px;color: #000040}

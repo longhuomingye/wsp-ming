@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC  
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+   
+<mapper namespace="com.fh.shop.admin.mapper.product.IProductMapper">
+    <sql id="selectId">
+        <where>
+            <if test=" productName !=null and productName !='' ">
+                productName like CONCAT(CONCAT('%',#{productName}),'%')
+            </if>
+            <if test=" price !=null and price !='' ">
+                and price like CONCAT(CONCAT('%',#{price}),'%')
+            </if>
+            <if test=" minTime !=null">
+                and producedDate >= #{minTime}
+            </if>
+            <if test=" maxTime !=null">
+                and producedDate &lt; = #{maxTime}
+            </if>
+            <if test=" brandId !=null and brandId >0">
+                and brandId = #{brandId}
+            </if>
+            <if test=" cate1 !=null and cate1 > 0">
+                and cate1 = #{cate1}
+            </if>
+            <if test=" cate2 !=null and cate2 > 0">
+                and cate2 = #{cate2}
+            </if>
+            <if test=" cate3 !=null and cate3 > 0">
+                and cate3 = #{cate3}
+            </if>
+        </where>
+    </sql>
+    <!--查询总条数-->
+    <select id="findProductByCount" parameterType="com.fh.shop.admin.param.product.ProductSearchParam" resultType="java.lang.Long">
+        select count(*) from t_product tp
+        <include refid="selectId"></include>
+    </select>
+    <!--查询本页数据-->
+    <select id="productList" parameterType="com.fh.shop.admin.param.product.ProductSearchParam" resultType="com.fh.shop.admin.po.product.Product">
+        select t.* from (
+            select tp.id,productName,price,mainImagePath,producedDate,stock,tp.sellState,status,tb.brandName "brand.brandName",cateName "categoryNames"
+            from t_product tp left join t_brand tb on tp.brandId = tb.id
+            <include refid="selectId"></include>
+            order by id desc
+        )t
+        limit #{start},#{length}
+    </select>
+    <!--添加商品-->
+    <insert id="add" parameterType="com.fh.shop.admin.po.product.Product">
+        insert into t_product(productName,price,mainImagePath,producedDate,stock,sellState,brandId,cate1,cate2,cate3,cateName)
+        values (#{productName},#{price},#{mainImagePath},#{producedDate},#{stock},#{sellState},#{brandId},#{cate1},#{cate2},#{cate3},#{categoryNames})
+    </insert>
+    <!--删除商品-->
+    <delete id="deleteProduct" parameterType="java.lang.Integer">
+        delete from t_product where id = #{id}
+    </delete>
+    <!--回显-->
+    <select id="toUpdateProduct" parameterType="java.lang.Integer" resultType="com.fh.shop.admin.po.product.Product">
+        select tp.id,productName,price,mainImagePath,producedDate,stock,tp.sellState,tb.id "brand.id",cateName "categoryNames"
+        from t_product tp left join t_brand tb on tp.brandId = tb.id
+        where tp.id = #{id}
+    </select>
+    <!--修改-->
+    <update id="updateProduct" parameterType="com.fh.shop.admin.po.product.Product">
+        update t_product set productName=#{productName},price = #{price}
+        ,producedDate=#{producedDate}
+        ,stock=#{stock},sellState=#{sellState}
+        ,brandId=#{brandId}
+        <if test=" mainImagePath !=null and mainImagePath !=''">
+            ,mainImagePath=#{mainImagePath}
+        </if>
+        <if test=" cate1 !=null and cate1 > 0">
+            ,cate1 = #{cate1}
+        </if>
+        <if test=" cate2 !=null and cate2 > 0">
+            ,cate2 = #{cate2}
+        </if>
+        <if test=" cate3 !=null and cate3 > 0">
+            ,cate3 = #{cate3}
+        </if>
+        <if test=" categoryNames !=null and categoryNames !=''">
+            ,cateName = #{categoryNames}
+        </if>
+        where id = #{id}
+    </update>
+    <!--上架 下架-->
+    <update id="updateStatus" parameterType="com.fh.shop.admin.po.product.Product">
+        update t_product set
+        status = #{status}
+        where id = #{id}
+    </update>
+    <!--条件查询导出数据-->
+    <select id="findProductList" parameterType="com.fh.shop.admin.param.product.ProductSearchParam" resultType="com.fh.shop.admin.po.product.Product">
+        select t.* from (
+        select id,productName,price,mainImagePath,producedDate,stock,sellState,status
+        from t_product
+        <include refid="selectId"></include>
+        order by id desc
+        )t
+    </select>
+</mapper>

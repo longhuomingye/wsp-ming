@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FUSUsageTrigger">
+    <session id="-91577180">
+      <usages-collector id="statistics.spring.core.usages.trigger">
+        <counts>
+          <entry key="fixes.SpringFacetInspection.AddFacetFix" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages">
+        <counts>
+          <entry key="LiveBeansNavigationHandler.fromCode" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../car-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/../jpa-test" />
+    <file type="web" url="file://$PROJECT_DIR$/../mp-test" />
+    <file type="web" url="file://$PROJECT_DIR$/../shop-admin-w" />
+    <file type="web" url="file://$PROJECT_DIR$/../shop-admin-wang" />
+    <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../shop-admin-wsp-V2" />
+    <file type="web" url="file://$PROJECT_DIR$/../shop-api" />
+    <file type="web" url="file://$PROJECT_DIR$/../shop-api-v2" />
+    <file type="web" url="file://$PROJECT_DIR$/../shopadminwspV2" />
+    <file type="web" url="file://$PROJECT_DIR$/../test" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../shop-admin-w/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-v2/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-brand/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../mp-test/pom.xml" />
+        <option value="$PROJECT_DIR$/../jpa-test/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-api-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-portal-sb/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../shop-admin-wsp-V2/pom.xml" />
+        <option value="$PROJECT_DIR$/../shop-admin-wsp-V2/shop-admin-wsp-V3/pom.xml" />
+        <option value="$PROJECT_DIR$/../test/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

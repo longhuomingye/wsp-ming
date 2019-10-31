@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC  
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+   
+<mapper namespace="com.fh.shop.admin.mapper.wealth.IWealthMapper">
+    <!--查询所有的菜单节点-->
+    <select id="findZtreeList" resultType="com.fh.shop.admin.po.wealth.Wealth">
+        select id,memuName,fatherId,memuType,url from t_wealth
+    </select>
+    <!--添加节点-->
+    <insert id="add" parameterType="com.fh.shop.admin.po.wealth.Wealth">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into t_wealth(memuName,fatherId,memuType,url)
+        values (#{memuName},#{fatherId},#{memuType},#{url})
+    </insert>
+
+    <!--删除节点-->
+    <delete id="deleteZtree" parameterType="java.lang.Integer">
+        delete from t_wealth
+        where
+        id in
+        <foreach collection="array" item="ids" open="(" separator="," close=")">
+            #{ids}
+        </foreach>
+    </delete>
+
+    <!--修改-->
+    <update id="updateZtree" parameterType="com.fh.shop.admin.po.wealth.Wealth">
+        update t_wealth
+        set
+        <if test=" memuName!=null and memuName!='' ">
+            memuName=#{memuName}
+        </if>
+        <if test=" memuType!=null and memuType!='' ">
+            ,memuType=#{memuType}
+        </if>
+        <if test=" url!=null and url!='' ">
+            ,url=#{url}
+        </if>
+        where id=#{id}
+    </update>
+
+    <!--根据用户角色查询对应的资源-->
+    <select id="findWealthByUserId" parameterType="com.fh.shop.admin.po.user.User" resultType="com.fh.shop.admin.po.wealth.Wealth">
+        select tw.id,memuName,fatherId,memuType,url from
+        t_wealth tw left join
+        t_role_wealth trw
+        on tw.id = trw.wealthId
+        left join t_user_role tur on tur.roleId = trw.roleId
+        where tur.userId = #{id}
+        group by trw.wealthId
+    </select>
+
+    <!--删除资源对应的角色资源中间表-->
+    <delete id="deleteWealthByIds" parameterType="java.lang.Integer">
+        delete from t_role_wealth where wealthId in
+        <foreach collection="array" item="ids" open="(" separator="," close=")">
+            #{ids}
+        </foreach>
+    </delete>
+
+    <select id="findWealthUrl" resultType="com.fh.shop.admin.po.wealth.Wealth">
+        select tw.id,memuName,fatherId,memuType,url from
+        t_wealth tw left join
+        t_role_wealth trw
+        on tw.id = trw.wealthId
+        left join t_user_role tur on tur.roleId = trw.roleId
+        group by trw.wealthId
+    </select>
+</mapper>

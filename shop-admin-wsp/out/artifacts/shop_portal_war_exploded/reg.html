@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link href="/js/bootstrap3/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/js/DataTables-1.10.18/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <title>会员注册页面</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal" id="userForm">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">会员名</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="memberName"
+                               placeholder="请输入会员名..." onblur="findMemberByName()">
+                    </div>
+                    <label class="col-sm-2 control-label" id="memberNameLabel"></label>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" id="password"
+                               placeholder="请输入密码...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">确认密码</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" id="passwordTo"
+                               placeholder="请再次确认密码...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">真实姓名</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="realName"
+                               placeholder="请再次确认密码...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">手机号</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="请输入手机号" id="phone" onblur="findMemberByPhone()">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-info" id="sendNode" onclick="auth()">发送验证码</button>
+                            </span>
+                        </div>
+                    </div>
+                    <label class="col-sm-2 control-label" id="phoneLabel"></label>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">验证码</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="node"
+                               placeholder="请输入手机短信验证码...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">邮箱</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="email"
+                               placeholder="请输入邮箱..." onblur="findMemberByEmail()">
+                    </div>
+                    <label class="col-sm-2 control-label" id="emailLabel"></label>
+                </div>
+                <div class="form-group" id="selectArea">
+                    <label class="col-sm-2 control-label">地区</label>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4">
+                    </div>
+                    <div align="col-sm-2">
+                        <button class="btn btn-primary" type="button" onclick="addMember()" id="submitAdd"><i
+                                class="glyphicon glyphicon-search"></i>注册会员
+                        </button>
+                        <button class="btn btn-default" type="reset" onclick="search()"><i
+                                class="glyphicon glyphicon-refresh"></i>重置
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery-3.2.1.js"></script>
+<script src="/js/bootstrap3/js/bootstrap.js"></script>
+<script src="/js/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="/js/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+<script src="/js/bootbox/bootbox.min.js"></script>
+<script src="/js/bootbox/bootbox.locales.min.js"></script>
+<script src="/js/common/jquery.cookie.min.js"></script>
+<!--全局ajaxSetUp-->
+<script src="/js/common/ajaxSetUp.js"></script>
+<script src="/js/common/jquery.cookie.min.js"></script>
+<script>
+    $(function(){
+        buildAreaSelect("selectArea",0);
+    })
+    function addMember(){
+        var memberName = $("#memberName").val();
+        var password = $("#password").val();
+        var passwordTo = $("#passwordTo").val();
+        var realName = $("#realName").val();
+        var node = $("#node").val();
+        var phone = $("#phone").val();
+        var area1 = $($("[name='selectArea']")[0]).val();
+        var area2 = $($("[name='selectArea']")[1]).val();
+        var area3 = $($("[name='selectArea']")[2]).val();
+        var email = $("#email").val();
+        var v_param = {};
+        v_param.memberName=memberName;
+        v_param.password=password;
+        v_param.realName=realName;
+        v_param.node=node;
+        v_param.phone=phone;
+        v_param.area1=area1;
+        v_param.area2=area2;
+        v_param.area3=area3;
+        v_param.email=email;
+        if(passwordTo == password){
+            if(node){
+                $.ajax({
+                    url:"http://127.0.0.1:8080/members",
+                    data:v_param,
+                    type:"post",
+                    success:function(res){
+                        if(res.code==200){
+                            alert("注册成功");
+                            location.href = "login.html";
+                        }else{
+                            alert(res.msg);
+                        }
+                    }
+                })
+            }else{
+                alert("验证码不能为空");
+            }
+        }else{
+            alert("密码和确认密码不一致");
+        }
+    }
+
+
+    /*地区三级联动*/
+    function buildAreaSelect(divId,pid,obj) {
+        if(obj){
+            $(obj).parent().nextAll().remove();
+        }
+        $.ajax({
+            url: "http://127.0.0.1:8080/areas",
+            data: {
+                "pid": pid
+            },
+            type: "get",
+            success: function (res) {
+                var data= res.data;
+                if (data.length == 0) {
+                    return;
+                }
+                var str = '<div class="col-sm-2"><select class="form-control" name="'+divId+'" onchange="buildAreaSelect(\''+divId+'\', this.value, this)">';
+                str += "<option value='-1'>===请选择===</option>";
+                for (var i = 0; i < data.length; i++) {
+                    str += "<option value='" + data[i].id + "'>" + data[i].areaName + "</option>";
+                }
+                str+="</select>"
+                str+="</div>"
+                if(divId=="selectArea"){
+                    $("#"+divId).append(str);
+                }
+            }
+        })
+    }
+
+    var memberNameFigh = 0;
+    function findMemberByName(){
+        var memberName = $("#memberName").val();
+        if(memberName){
+            $.ajax({
+                url:"http://127.0.0.1:8080/members",
+                data:{
+                    memberName:memberName
+                },
+                type:"get",
+                success:function(res){
+                    if(res.code==200){
+                        memberNameFigh=0;
+                        if(memberNameFigh!=1 && phoneFigh!=1 && emailFigh!=1){
+                            $("#submitAdd").removeAttr("disabled")
+                        }
+                        $("#memberNameLabel").html("");
+                    }else{
+                        var str = '<font color="#FF0000">**'+res.msg+'</font>';
+                        $("#memberNameLabel").html(str);
+                        $("#submitAdd").attr("disabled","disabled");
+                        memberNameFigh=1;
+                    }
+                }
+            })
+        }else{
+            memberNameFigh=0;
+            if(memberNameFigh!=1 && phoneFigh!=1 && emailFigh!=1){
+                $("#submitAdd").removeAttr("disabled")
+            }
+            $("#memberNameLabel").html("");
+        }
+    }
+
+    var phoneFigh = 0;
+    function findMemberByPhone(){
+        var phone = $("#phone").val();
+        if(phone){
+            $.ajax({
+                url:"http://127.0.0.1:8080/members/phone",
+                data:{
+                    phone:phone
+                },
+                success:function(res){
+                    if(res.code==200){
+                        phoneFigh=0;
+                        if(memberNameFigh!=1 && phoneFigh!=1 && emailFigh!=1){
+                            $("#submitAdd").removeAttr("disabled");
+                        }
+                        $("#phoneLabel").html("");
+                    }else{
+                        var str = '<font color="#FF0000">**'+res.msg+'</font>';
+                        $("#phoneLabel").html(str);
+                        $("#submitAdd").attr("disabled","disabled");
+                        phoneFigh=1;
+                    }
+                }
+            })
+        }else{
+            $("#phoneLabel").html("");
+            phoneFigh=0;
+            if(memberNameFigh!=1 && phoneFigh!=1 && emailFigh!=1){
+                $("#submitAdd").removeAttr("disabled");
+            }
+        }
+    }
+
+    var emailFigh = 0;
+    function findMemberByEmail(){
+        var email = $("#email").val();
+        if(email){
+            $.ajax({
+                url:"http://127.0.0.1:8080/members/email",
+                data:{
+                    email:email
+                },
+                success:function(res){
+                    if(res.code==200){
+                        $("#emailLabel").html("");
+                        emailFigh=0;
+                        if(memberNameFigh!=1 && phoneFigh!=1 && emailFigh!=1){
+                            $("#submitAdd").removeAttr("disabled");
+                        }
+                    }else{
+                        var str = '<font color="#FF0000">**'+res.msg+'</font>';
+                        $("#submitAdd").attr("disabled","disabled");
+                        $("#emailLabel").html(str);
+                        emailFigh=1;
+                    }
+                }
+            })
+        }else{
+            $("#emailLabel").html("");
+            emailFigh=0;
+            if(memberNameFigh!=1 && phoneFigh!=1 && emailFigh!=1){
+                $("#submitAdd").removeAttr("disabled");
+            }
+        }
+    }
+
+    function search(){
+        $("#submitAdd").removeAttr("disabled");
+        $("#emailLabel").html("");
+        $("#phoneLabel").html("");
+        $("#memberNameLabel").html("");
+    }
+</script>
+</body>
+</html>

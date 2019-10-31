@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title>结算页</title>
+	<link rel="stylesheet" href="/js/bootstrap3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/js/shop/css/webbase.css" />
+	<link rel="stylesheet" type="text/css" href="/js/shop/css/pages-getOrderInfo.css" />
+</head>
+
+<body>
+<div id="navDiv"></div>
+<div class="cart py-container" id="allDiv">
+	<!--logoArea-->
+	<div class="logoArea">
+		<div class="fl logo"><span class="title">结算页</span></div>
+		<div class="fr search">
+
+		</div>
+	</div>
+	<!--主内容-->
+	<div class="checkout py-container">
+		<div class="checkout-tit">
+			<h4 class="tit-txt">填写并核对订单信息</h4>
+		</div>
+		<div class="checkout-steps">
+			<!--收件人信息-->
+			<div class="step-tit">
+				<h5>收件人信息<span><a href="javascript:addAddress()" data-target=".edit" data-keyboard="false" class="newadd">新增收货地址</a></span></h5>
+			</div>
+			<div class="step-cont">
+				<div class="addressInfo">
+					<ul class="addr-detail">
+						<li class="addr-item" id="addressLi">
+						</li>
+					</ul>
+					<!--添加地址-->
+					<div  tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade edit">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" onclick="addAddress()" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>
+									<h4 id="myModalLabel" class="modal-title">添加收货地址</h4>
+								</div>
+								<div class="modal-body">
+									<form action="" class="sui-form form-horizontal">
+										<div class="control-group">
+											<label class="control-label">收货人：</label>
+											<div class="controls">
+												<input type="text" class="input-medium">
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label">详细地址：</label>
+											<div class="controls">
+												<input type="text" class="input-large">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">联系电话：</label>
+											<div class="controls">
+												<input type="text" class="input-medium">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">邮箱：</label>
+											<div class="controls">
+												<input type="text" class="input-medium">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">地址别名：</label>
+											<div class="controls">
+												<input type="text" class="input-medium">
+											</div>
+											<div class="othername">
+												建议填写常用地址：<a href="#" class="sui-btn btn-default">家里</a>　<a href="#" class="sui-btn btn-default">父母家</a>　<a href="#" class="sui-btn btn-default">公司</a>
+											</div>
+										</div>
+
+									</form>
+
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">确定</button>
+									<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--确认地址-->
+				</div>
+				<div class="hr"></div>
+
+			</div>
+			<div class="hr"></div>
+			<!--支付和送货-->
+			<div class="payshipInfo">
+				<div class="step-tit">
+					<h5>支付方式</h5>
+				</div>
+				<div class="step-cont">
+					<ul class="payType">
+						<li class="selected" id="wei" value="1">微信付款<span title="点击取消选择"></span></li>
+						<li name="paymentType" id="zhi" value="2">支付宝支付<span title="点击取消选择"></span></li>
+					</ul>
+				</div>
+				<div class="hr"></div>
+				<div class="step-tit">
+					<h5>送货清单</h5>
+				</div>
+				<div class="step-cont">
+					<ul class="send-detail" id="sendInventory">
+
+					</ul>
+				</div>
+				<div class="hr"></div>
+			</div>
+			<div class="linkInfo">
+				<div class="step-tit">
+					<h5>发票信息</h5>
+				</div>
+				<div class="step-cont">
+					<span>普通发票（电子）</span>
+					<span>个人</span>
+					<span>明细</span>
+				</div>
+			</div>
+			<div class="cardInfo">
+				<div class="step-tit">
+					<h5>使用优惠/抵用</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="orderDetaIlsDiv">
+		<div class="order-summary">
+			<div class="static fr">
+				<div class="list">
+					<span><i class="number">0</i>件商品，总商品金额</span>
+					<em class="allprice">¥0.00</em>
+				</div>
+				<div class="list">
+					<span>返现：</span>
+					<em class="money">0.00</em>
+				</div>
+				<div class="list">
+					<span>运费：</span>
+					<em class="transport">0.00</em>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix trade">
+			<div class="fc-price">应付金额:　<span class="price">¥0.00</span></div>
+			<div class="fc-receiverInfo">寄送至:北京市海淀区三环内 中关村软件园9号楼 收货人：某某某 159****3201</div>
+		</div>
+	</div>
+	<div class="submit">
+		<a class="sui-btn btn-danger btn-xlarge" href="javascript:addOrder()">提交订单</a>
+	</div>
+</div>
+<!-- 底部栏位 -->
+<!--页面底部-->
+<div class="clearfix footer">
+	<div class="py-container">
+		<div class="footlink">
+			<div class="Mod-service">
+				<ul class="Mod-Service-list">
+					<li class="grid-service-item intro  intro1">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item  intro intro2">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item intro  intro3">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item  intro intro4">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item intro intro5">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix Mod-list">
+				<div class="yui3-g">
+					<div class="yui3-u-1-6">
+						<h4>购物指南</h4>
+						<ul class="unstyled">
+							<li>购物流程</li>
+							<li>会员介绍</li>
+							<li>生活旅行/团购</li>
+							<li>常见问题</li>
+							<li>购物指南</li>
+						</ul>
+
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>配送方式</h4>
+						<ul class="unstyled">
+							<li>上门自提</li>
+							<li>211限时达</li>
+							<li>配送服务查询</li>
+							<li>配送费收取标准</li>
+							<li>海外配送</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>支付方式</h4>
+						<ul class="unstyled">
+							<li>货到付款</li>
+							<li>在线支付</li>
+							<li>分期付款</li>
+							<li>邮局汇款</li>
+							<li>公司转账</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>售后服务</h4>
+						<ul class="unstyled">
+							<li>售后政策</li>
+							<li>价格保护</li>
+							<li>退款说明</li>
+							<li>返修/退换货</li>
+							<li>取消订单</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>特色服务</h4>
+						<ul class="unstyled">
+							<li>夺宝岛</li>
+							<li>DIY装机</li>
+							<li>延保服务</li>
+							<li>品优购E卡</li>
+							<li>品优购通信</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>帮助中心</h4>
+						<img src="img/wx_cz.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="Mod-copyright">
+				<ul class="helpLink">
+					<li>关于我们<span class="space"></span></li>
+					<li>联系我们<span class="space"></span></li>
+					<li>关于我们<span class="space"></span></li>
+					<li>商家入驻<span class="space"></span></li>
+					<li>营销中心<span class="space"></span></li>
+					<li>友情链接<span class="space"></span></li>
+					<li>关于我们<span class="space"></span></li>
+					<li>营销中心<span class="space"></span></li>
+					<li>友情链接<span class="space"></span></li>
+					<li>关于我们</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--页面底部END-->
+<li style="display: none" id="cartLi">
+
+	<div class="sendGoods">
+
+		<ul class="yui3-g">
+			<li class="yui3-u-1-6" name="##productName##" value="##productIds##">
+				<span><img src="##img##"/></span>
+			</li>
+			<li class="yui3-u-7-12">
+				<div class="desc">##privateName##</div>
+				<div class="seven">7天无理由退货</div>
+			</li>
+			<li class="yui3-u-1-12">
+				<div class="price">￥##price##</div>
+			</li>
+			<li class="yui3-u-1-12">
+				<div class="num">X##subTotalCount##</div>
+			</li>
+			<li class="yui3-u-1-12">
+				<div class="exit">有货</div>
+			</li>
+		</ul>
+	</div>
+</li>
+<div id="toolbarDiv" style="display: none">
+	<div class="order-summary">
+		<div class="static fr">
+			<div class="list">
+				<span><i class="number" id="##countId##">##totalCount##</i>件商品，总商品金额</span>
+				<em class="allprice" id="##totalPriceId##">¥##totalPrice##</em>
+			</div>
+			<div class="list">
+				<span>返现：</span>
+				<em class="money">0.00</em>
+			</div>
+			<div class="list">
+				<span>运费：</span>
+				<em class="transport">0.00</em>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix trade">
+		<div class="fc-price">应付金额:　<span class="price">¥##totalPrice##</span></div>
+		<div class="fc-receiverInfo">寄送至:北京市海淀区三环内 中关村软件园9号楼 收货人：某某某 159****3201</div>
+	</div>
+</div>
+<!--地址模板-->
+<div id="addRessDiv" style="display: none">
+	<div>
+		<div name="addressName" class="con name ##select##" id="selectDiv_##id##"><a href="javascript:selectAddress('##id##');" >##cneeName##<span title="点击取消选择">&nbsp;</span></a></div>
+		<div class="con address" id="spanDiv">
+			<span id="cneeName_##id##">##cneeName##</span> <span id="address_##id##">##address##</span> <span id="phone_##id##">##phone##</span>
+
+			<span class="edittext"><a data-target=".edit" data-keyboard="false" href="javascript:toUpdate('##id##')">编辑</a>&nbsp;&nbsp;<a href="javascript:delByid('##id##');">删除</a></span>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--添加地址模板-->
+<div id="addSiteStr" style="display: none">
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">收货人姓名</label>
+			<div class="col-sm-4"><!-- form-inline -->
+				<input type="text" id="cneeName" class="form-control" placeholder="请输入收货人姓名">
+			</div>
+			<div style="margin-top: 8px;font-size: 15px;color: red">
+				<span name="verifySpan" id="userNameSpan"></span></div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">收货人手机号</label>
+			<div class="col-sm-4">
+				<input type="text" id="phone" class="form-control" placeholder="请确认收货人手机号">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">地区</label>
+			<div class="col-sm-8" id="addAddress">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">详细地址</label>
+			<div class="col-sm-4">
+				<input type="text" id="address" class="form-control" placeholder="请输入详细地址">
+			</div>
+		</div>
+		<!--<div class="form-group">
+			<label class="col-sm-2 control-label">设为默认地址</label>
+			<div class="col-sm-4">
+				<input type="radio" name="site" value="1">是
+				<input type="radio" name="site" value="2">否
+			</div>
+		</div>-->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">地址别名</label>
+			<div class="col-sm-4">
+				<input type="radio" name="alias" value="1">家里
+				<input type="radio" name="alias" value="2">公司
+				<input type="radio" name="alias" value="3">朋友家
+			</div>
+		</div>
+	</form>
+</div>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/shop/js/plugins/jquery.easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/js/shop/js/plugins/sui/sui.min.js"></script>
+<script type="text/javascript" src="/js/shop/js/pages/getOrderInfo.js"></script>
+<script src="/js/bootstrap3/js/bootstrap.min.js"></script>
+<!--全局ajaxSetUp-->
+<script src="/js/common/ajaxSetUp.js"></script>
+<script src="/js/common/jquery.cookie.min.js"></script>
+<script src="/js/bootbox/bootbox.min.js"></script>
+<script src="/js/bootbox/bootbox.locales.min.js"></script>
+<script>
+	var addSiteStr;
+    var cneeName;
+    var address;
+    var phone;
+    var paymentType;
+    var uuid;
+	$(function(){
+        if (!loginFlag) {
+            $("#allDiv").html('<div style="float: contour;"><h1>登录之后才能访问购物车,请<a href="login.html">登录</a>或者<a href="reg.html">注册</a></h1></div>')
+        }
+        findCart();
+        v_toolbarDiv = $("#toolbarDiv").html();
+        findAddress();
+        addSiteStr = $("#addSiteStr").html();
+        $.ajax({
+			url:"http://127.0.0.1:8080/idems",
+			success:function(res){
+                uuid = res.data;
+			}
+		})
+	})
+
+    function findCart(){
+        $.ajax({
+            url:"http://127.0.0.1:8080/carts",
+            success:function(res){
+                if(res.code==200){
+                    var data = res.data;
+                    if(data){
+                        var list = res.data.list;
+                        $("#mainDiv").html("");
+                        $("#toolbarDiv").html(v_toolbarDiv);
+                        for (var i = 0; i < list.length; i++) {
+                            var cartItem = list[i];
+                            var cartLi = $("#cartLi").html();
+                            cartLi = cartLi.replace(/##img##/g,cartItem.img)
+                                .replace(/##privateName##/g,cartItem.privateName)
+                                .replace(/##price##/g,cartItem.price)
+                                .replace(/##subTotalCount##/g,cartItem.subTotalCount)
+                                .replace(/##productIds##/g,cartItem.privateId)
+                                .replace(/##productName##/g,"productName")
+                            $("#sendInventory").append(cartLi);
+                        }
+                        var toolbarDiv = $("#toolbarDiv").html();
+                        toolbarDiv = toolbarDiv.replace(/##totalCount##/g,data.totalCount)
+                            .replace(/##totalPrice##/g,data.totalPrice)
+                            .replace(/##countId##/g,"count")
+                            .replace(/##totalPriceId##/g,"totalPriceId")
+                        $("#orderDetaIlsDiv").html(toolbarDiv);
+                    }else{
+                        $("#sendInventory").html('<div style="float: contour;"><h1><a href="index.html">您的购物车还没有添加商品，请去往首页选择需要购买的商品</a></h1></div>')
+                    }
+                }
+            }
+        })
+    }
+
+    //用于展示 库存不足的商品
+    function addOrder(){
+        var productIds = [];
+        $("[name='productName']").each(function(){
+            var id = $(this).val();
+            productIds.push(id);
+        })
+        $.ajax({
+            url:"http://127.0.0.1:8080/order",
+            type:"post",
+            beforeSend:function(request){
+                request.setRequestHeader("token",uuid);
+                var key = $.cookie("key");
+                request.setRequestHeader("x-auth",key);
+            },
+            data:{
+                productIds:productIds.toString(),
+                name:cneeName,
+                address:address,
+                telephone:phone,
+                paymentType:paymentType,
+            },
+            success:function(res){
+                if(res.code==200){
+                    if(res.data.orderItems.length==0){
+                        location.href="/pay-student.html";
+                    }else{
+                        var list = res.data.orderItems;
+                        $("#mainDiv").html("");
+                        $("#toolbarDiv").html(v_toolbarDiv);
+                        var str = "";
+                        for (var i = 0; i < list.length; i++) {
+                            var cartItem = list[i];
+                            var cartLi = $("#cartLi").html();
+                            cartLi = cartLi.replace(/##img##/g,cartItem.img)
+                                .replace(/##privateName##/g,cartItem.privateName)
+                                .replace(/##price##/g,cartItem.price)
+                                .replace(/##subTotalCount##/g,cartItem.subTotalCount)
+                                .replace(/##productIds##/g,cartItem.privateId)
+                                .replace(/##productName##/g,"productName")
+                                .replace(/有货/g,"缺货")
+                            str+=cartLi;
+                        }
+                        bootbox.dialog({
+                            title: "订单提交成功，以下是库存不足的商品",
+                            message: str,
+                            size: 'large',
+                            backdrop:false,
+                            buttons: {
+                                cancel: {
+                                    label: "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>&nbsp;取消",
+                                    className: 'btn-danger',
+                                    callback: function(){
+                                        console.log('Custom cancel clicked');
+                                    }
+                                },
+                                ok: {
+                                    label: "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>&nbsp;确认",
+                                    className: 'btn-info',
+                                    callback: function(){
+                                        location.href="/pay-student.html";
+                                    }
+                                }
+                            }
+                        });
+                    }
+                }else{
+                    bootbox.alert({
+                        message: "<span class='glyphicon glyphicon-exclamation-sign'></span>"+res.msg,
+                        size: 'small',
+                        backdrop:false,
+                        title: "提示信息"
+                    });
+				}
+            }
+        })
+    }
+
+	var updateBox;
+	function toUpdate(id){
+        $.ajax({
+            url:"http://127.0.0.1:8080/address/toUpdate?id=" + id,
+            success:function(ref){
+                if(ref.code == 200){
+                    var data = ref.data;
+                    $("#cneeName").val(data.cneeName);
+                    $("#phone").val(data.phone);
+                    $("#address").val(data.address);
+                    $("[name='alias']").each(function(){
+                       if($(this).val()==data.alias){
+							$(this).attr("checked","checked")
+					   }
+					});
+                    buildAreaSelect("updateAddress",0);
+                    updateBox = bootbox.dialog({
+                        title: '修改地址',
+                        backdrop:false,
+                        message: $("#addSiteStr form"),
+                        size: 'large',//有效值为'large'和'small'
+                        buttons: {
+                            ok: {
+                                label: "<i class='glyphicon glyphicon-plus-sign'>修改",
+                                className: 'btn-info',
+                                callback: function () {//添加回调函数 $("#sdss").serialize()
+                                    var cneeName = $("#cneeName",updateBox).val();
+                                    var phone = $("#phone",updateBox).val();
+                                    var address = $("#address",updateBox).val();
+                                    var site = $("[name='site']:checked",updateBox).val();
+                                    var alias = $("[name='alias']:checked",updateBox).val();
+                                    var str = [];
+                                    $("#addAddress option:selected",updateBox).each(function(){
+                                        if($(this).val()!=-1){
+                                            var cateName = $(this).text();
+                                            str.push(cateName)
+                                        }
+                                    })
+                                    str = str +","+address
+                                    var param = {
+                                        cneeName:cneeName,
+                                        address:str,
+                                        site:site,
+                                        phone:phone,
+                                        alias:alias,
+                                        id:id
+                                    };
+                                    param = JSON.stringify(param)
+                                    $.ajax({
+                                        url: "http://127.0.0.1:8080/address",
+                                        data: param,
+                                        type:"put",
+                                        contentType:"application/json;charset:uft-8",
+                                        success: function (ref) {
+                                            if (ref.code == 200) {
+                                                findAddress();
+                                            }
+                                        }
+                                    })
+                                }
+                            },
+                            cancel: {
+                                label: "<i class='glyphicon glyphicon-remove-sign'>关闭",
+                                className: 'btn-danger',
+                                callback: function (data) {//关闭回调函数
+                                }
+                            },
+                        },
+                    })
+                    $("#addSiteStr").html(addSiteStr);
+                }
+            }
+        })
+    }
+
+	function delByid(id){
+        bootbox.confirm({
+            message: "你确定删除吗?",
+            size: 'small',
+            title: "提示信息",
+            backdrop:false,
+            buttons: {
+                confirm: {
+                    label: '<span class="glyphicon glyphicon-ok"></span>确定',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: '<span class="glyphicon glyphicon-remove"></span>取消',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                //这个result是boolean类型的 点确认是true 反之false
+                if (result) {
+                    //删除
+                    $.ajax({
+                        url:"http://127.0.0.1:8080/address/"+id,
+                        type:"delete",
+                        success:function(res){
+                            if(res.code==200){
+                                findAddress();
+                            }
+                        }
+                    })
+                }
+            }
+        })
+	}
+
+	var add;
+	function addAddress(){
+        buildAreaSelect("addAddress",0);
+        add = bootbox.dialog({
+            title: '添加地址',
+            message: $("#addSiteStr form"),
+            size: 'large',
+            backdrop:false,
+            buttons: {
+                cancel: {
+                    label: "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>&nbsp;取消",
+                    className: 'btn-danger',
+                    callback: function(){
+                        console.log('Custom cancel clicked');
+                    }
+                },
+                ok: {
+                    label: "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>&nbsp;确认",
+                    className: 'btn-info',
+                    callback: function(){
+                        var cneeName = $("#cneeName",add).val();
+                        var phone = $("#phone",add).val();
+                        var address = $("#address",add).val();
+                        var site = $("[name='site']:checked",add).val();
+                        var alias = $("[name='alias']:checked",add).val();
+                        var str = [];
+                        $("#addAddress option:selected",add).each(function(){
+                            if($(this).val()!=-1){
+                                var cateName = $(this).text();
+                                str.push(cateName)
+                            }
+                        })
+						str = str +","+address
+                        var param = {
+                            cneeName:cneeName,
+                            address:str,
+                            site:site,
+                            phone:phone,
+                            alias:alias,
+                        };
+                        $.ajax({
+                            url: 'http://127.0.0.1:8080/address',
+                            type: 'post',
+                            data: param,
+                            dataType:"json",
+                            success: function (res) {
+                                if(res.code==200){
+                                    findAddress();
+                                }
+                            }
+                        });
+                    }
+                }
+            }
+        });
+        $("#addSiteStr").html(addSiteStr);
+	}
+
+	function findAddress(){
+	    $.ajax({
+			url:"http://127.0.0.1:8080/address",
+			success:function(res){
+			    if(res.code==200){
+			        var data =res.data;
+			        $("#addressLi").html("")
+					var id;
+                    for (var i = 0; i < data.length; i++) {
+                        var addres = data[i];
+						var addRessDiv = $("#addRessDiv").html();
+                        addRessDiv = addRessDiv.replace(/##cneeName##/g,addres.cneeName)
+                            					.replace(/##address##/g,addres.address)
+                            					.replace(/##phone##/g,addres.phone)
+                            					.replace(/##id##/g,addres.id)
+						if(i==0){
+                            addRessDiv = addRessDiv.replace("##select##","selected")
+                            id=addres.id;
+                            cneeName=addres.cneeName;
+                            address=addres.address;
+                            phone=addres.phone;
+                            paymentType=1;
+						}else if(i<2){
+                            $("#spanDiv").append('<span class="base">默认地址</span>');
+						}
+						$("#addressLi").append(addRessDiv);
+                        $(".address").hover(function(){
+                            $(this).addClass("address-hover");
+                        },function(){
+                            $(this).removeClass("address-hover");
+                        });
+                    }
+				}
+			}
+		})
+	}
+
+	function selectAddress(id){
+	    var selectDiv = document.getElementById("selectDiv_"+id);
+	    var className = selectDiv.className;
+        var wei = document.getElementById("wei");
+        var zhi = document.getElementById("zhi");
+        $("[name='addressName']").each(function(){
+            $(this).attr("class","con name")
+		})
+        var weic = wei.className;
+        if(weic.search("selected")==0){
+            paymentType = wei.value;
+		}else{
+            paymentType = zhi.value;
+		}
+	    if(className.search("selected")!=-1){
+            $(selectDiv).attr("class","con name");
+		}else{
+            $(selectDiv).attr("class","con name selected");
+            cneeName = $("#cneeName_"+id).text();
+            address = $("#address_"+id).text();
+            phone = $("#phone_"+id).text();
+		}
+	}
+
+    function buildAreaSelect(divId,pid,obj) {
+        if(obj){
+            $(obj).parent().nextAll().remove();
+        }
+        $.ajax({
+            url: "http://127.0.0.1:8080/areas",
+            data: {
+                "pid": pid
+            },
+            type: "get",
+            success: function (res) {
+                var data= res.data;
+                if (data.length == 0) {
+                    return;
+                }
+                var str = '<div class="col-sm-4"><select class="form-control" name="'+divId+'" onchange="buildAreaSelect(\''+divId+'\', this.value, this)">';
+                str += "<option value='-1'>===请选择===</option>";
+                for (var i = 0; i < data.length; i++) {
+                    str += "<option value='" + data[i].id + "'>" + data[i].areaName + "</option>";
+                }
+                str+="</select>"
+                str+="</div>"
+                if(divId=="addAddress"){
+                    $("#"+divId,add).append(str);
+                }else if(divId="updateAddress"){
+                    $("#addAddress",updateBox).append(str);
+				}
+            }
+        })
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd  
+
+
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd  
+
+
+
+
+        http://www.springframework.org/schema/mvc   
+    	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context   
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/task
+        http://www.springframework.org/schema/task/spring-task-3.1.xsd"
+       xmlns:task="http://www.springframework.org/schema/task">
+    <mvc:annotation-driven/>
+    <!--扫描控制层-->
+    <context:component-scan base-package="com.fh.shop.admin.controller"/>
+    <!--扫描异常处理层-->
+    <context:component-scan base-package="com.fh.shop.admin.controller.exception"/>
+
+    <!--内部视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 请求前缀 -->
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <!-- 请求后缀 -->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 定时任务相关配置 -->
+    <task:executor id="executor" pool-size="10" queue-capacity="128"/>
+    <task:scheduler id="scheduler" pool-size="10"/>
+    <task:annotation-driven executor="executor" scheduler="scheduler" proxy-target-class="true"/>
+
+    <!--  文件上传  -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760"/>
+        <property name="maxInMemorySize" value="4096" />
+        <property name="defaultEncoding" value="UTF-8"></property>
+    </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/> <!-- 默认拦截所有请求 -->
+            <mvc:exclude-mapping path="/js/**"/><!--不拦截js文件夹下的文件-->
+            <mvc:exclude-mapping path="/user/login.jhtml"/><!--不拦截登录请求-->
+            <mvc:exclude-mapping path="/user/resetPassword.jhtml"/><!--不拦截忘记密码请求-->
+            <bean class="com.fh.shop.admin.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/js/**"/><!--不拦截js文件夹下的文件-->
+            <mvc:exclude-mapping path="/user/login.jhtml"/><!--不拦截登录请求-->
+            <mvc:exclude-mapping path="/user/resetPassword.jhtml"/><!--不拦截忘记密码请求-->
+            <bean class="com.fh.shop.admin.interceptor.permissionInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!--生成切面类的bean-->
+    <bean id="logAspect" class="com.fh.shop.admin.aspect.LogAspect"></bean>
+
+    <!--日志统一管理-->
+    <aop:config>
+         <aop:aspect ref="logAspect">
+            <aop:pointcut id="logPointcut" expression="execution(* com.fh.shop.admin.controller..*.add*(..)) ||
+              execution(* com.fh.shop.admin.controller..*.del*(..))) ||
+              execution(* com.fh.shop.admin.controller..*.reset*(..))) ||
+              execution(* com.fh.shop.admin.controller..*.update*(..)))"></aop:pointcut>
+            <aop:around method="logInfo" pointcut-ref="logPointcut"></aop:around>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

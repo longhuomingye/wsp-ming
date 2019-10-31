@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fh.shop.admin.mapper.brand.IBrandMapper">
+
+	<sql id="brandWhere">
+		<where>
+			<if test=" brandName !=null and brandName !=''">
+				brandName like concat('%',#{brandName},'%')
+			</if>
+		</where>
+	</sql>
+
+	<!-- 添加 -->
+    <insert id="add" parameterType="com.fh.shop.admin.po.brand.Brand">
+		insert into t_brand(brandName,brandImg)
+		values(#{brandName},#{brandImg})
+	</insert>
+
+	<!-- 查询总条数 -->
+	<select id="getRecordsTotal" resultType="java.lang.Long">
+		select count(*)
+		from t_brand
+		<include refid="brandWhere"></include>
+	</select>
+
+	<!-- 查询list -->
+	<select id="list" resultType="com.fh.shop.admin.po.brand.Brand" parameterType="com.fh.shop.admin.po.brand.Brand">
+		select t.* from (
+			select id,brandName,brandImg,sellState,sort
+			from t_brand
+			<include refid="brandWhere"></include>
+			order by sellState DESC,sort DESC
+		) t
+		limit #{start},#{length}
+	</select>
+
+	<!-- delete -->
+	<delete id="delete" parameterType="java.lang.Integer">
+		delete from t_brand where id = #{id}
+	</delete>
+
+	<!-- 回显 -->
+	<select id="findBrand" resultType="com.fh.shop.admin.po.brand.Brand" parameterType="java.lang.Integer">
+		select id,brandName,brandImg,sellState,sort
+		from t_brand
+		where id = #{id}
+	</select>
+
+	<!-- 修改 -->
+	<update id="update" parameterType="com.fh.shop.admin.po.brand.Brand">
+		update t_brand
+		<set>
+			<if test=" brandName !=null and brandName !=''">
+				brandName = #{brandName}
+			</if>
+			<if test=" brandImg !=null and brandImg !=''">
+				,brandImg = #{brandImg}
+			</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<update id="updateSellState">
+		update t_brand
+		set sellState=#{sellState}
+		where id=#{id}
+	</update>
+	<!--查询所有品牌-->
+	<select id="findBrandList" resultType="com.fh.shop.admin.po.brand.Brand">
+		select id,brandName,brandImg,sellState,sort
+		from t_brand
+	</select>
+</mapper>
