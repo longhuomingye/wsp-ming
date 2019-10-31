@@ -17,7 +17,10 @@
     <bookmark url="file://$PROJECT_DIR$/../shop-api/src/main/java/com/fh/shop/api/weixin/HttpUtil.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4522f282-abeb-4f89-9a4d-085d3a32c1dd" name="Default" comment="" />
+    <list default="true" id="4522f282-abeb-4f89-9a4d-085d3a32c1dd" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../shop-admin-wsp-V2/target/" />
@@ -80,8 +83,8 @@
       <file leaf-file-name="MybatisPlusConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/MybatisPlusConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="140" column="25" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
+            <state relative-caret-position="423">
+              <caret line="144" column="35" lean-forward="true" selection-start-line="144" selection-start-column="35" selection-end-line="144" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -145,6 +148,9 @@
     <dirStrings>
       <dir>D:\fh\1902B\final\1902ming\shop-api\src\main\java\com\fh\shop\api\area\controller</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -240,87 +246,55 @@
     <option name="width" value="1750" />
     <option name="height" value="990" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-admin-wsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-admin-wsp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-admin-wsp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-admin-wsp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-admin-wsp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-admin-wsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-api-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,7 +317,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.28336558" />
   </component>
   <component name="RecentsManager">
@@ -1335,8 +1309,17 @@
       <workItem from="1572521020592" duration="361000" />
       <workItem from="1572521399335" duration="620000" />
       <workItem from="1572522055135" duration="9729000" />
-      <workItem from="1572564442662" duration="245000" />
+      <workItem from="1572564442662" duration="647000" />
+      <workItem from="1572565107395" duration="672000" />
     </task>
+    <task id="LOCAL-00001" summary="8好，坑一个，yb">
+      <created>1572564823901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572564823901</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1372,7 +1355,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1320124000" />
+    <option name="totallyTimeSpent" value="1321198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1388,17 +1371,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.4953083" weight="0.3286517" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49934897" weight="0.41573033" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" sideWeight="0.49932975" weight="0.3286517" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5127346" side_tool="true" visible="true" weight="0.49016854" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5127346" side_tool="true" weight="0.49016854" />
       <window_info anchor="right" id="Maven Projects" order="6" sideWeight="0.4985955" weight="0.32573727" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49061662" weight="0.3300562" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49061662" weight="0.32911393" />
       <window_info anchor="bottom" id="Spring" order="0" sideWeight="0.49463806" weight="0.3286517" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.5087131" side_tool="true" weight="0.4255618" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48870638" visible="true" weight="0.2613941" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48870638" visible="true" weight="0.2647453" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
       <window_info id="Web" order="2" sideWeight="0.51129365" side_tool="true" weight="0.24530831" />
       <window_info anchor="right" id="Database" order="7" weight="0.3297587" />
@@ -1414,14 +1398,43 @@
       <window_info anchor="bottom" id="Message" order="11" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49934897" weight="0.41573033" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="8好，坑一个，yb" />
+    <option name="LAST_COMMIT_MESSAGE" value="8好，坑一个，yb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1492,20 +1505,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3920">
-          <caret line="140" column="25" lean-forward="true" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/fh/shop/api/pay/biz/IPayServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../shop-api-brand/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1772,10 +1771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1793,10 +1788,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../shop-api-springboot/src/main/java/com/MybatisPlusConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="140" column="25" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
+        <state relative-caret-position="423">
+          <caret line="144" column="35" lean-forward="true" selection-start-line="144" selection-start-column="35" selection-end-line="144" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1854,7 +1861,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>shop-api-springboot</last-edited>
+          <last-edited>shop-api-brand</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
