@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fh.shop.api.brand.mapper.IBrandMapper">
+
+    <sql id="brandWhere">
+        <where>
+            <if test=" brandName !=null and brandName !=''">
+                brandName like concat('%',#{brandName},'%')
+            </if>
+        </where>
+    </sql>
+
+    <!-- 查询总条数 -->
+    <select id="findBrandByCount" resultType="java.lang.Long">
+        select count(*)
+        from t_brand
+        <include refid="brandWhere"></include>
+    </select>
+
+    <!-- 查询list -->
+    <select id="findBrand" resultType="com.fh.shop.api.brand.po.Brand">
+        select t.* from (
+        select id,brandName,brandImg,sellState,sort
+        from t_brand
+        <include refid="brandWhere"></include>
+        order by sellState DESC,sort DESC
+        ) t
+        limit #{start},#{length}
+    </select>
+
+
+</mapper>
