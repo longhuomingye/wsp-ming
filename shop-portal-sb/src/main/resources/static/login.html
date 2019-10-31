@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link href="/js/bootstrap3/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/js/DataTables-1.10.18/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <title>登录页面</title>
+</head>
+<body>
+
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active" onclick="qingkong()"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">登录</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">免密登录</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal" id="userForm">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">会员名</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="memberName"
+                                           placeholder="请输入会员名..." style="width: 300px">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">密码</label>
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="password"
+                                           placeholder="请输入密码..." style="width: 300px">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                </div>
+                                <div align="col-sm-2">
+                                    <button class="btn btn-primary" type="button" onclick="login()"><i
+                                            class="glyphicon glyphicon-search"></i>登录
+                                    </button>
+                                    <button class="btn btn-default" type="reset"><i
+                                            class="glyphicon glyphicon-refresh"></i>重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">手机号 </label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="请输入手机号" id="phone" style="width: 300px;">
+                                    <span class="input-group-btn" style="width: 300px;">
+                                        <button type="button" class="btn btn-info" id="sendNode" onclick="auth('登录')">发送验证码</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">验证码</label>
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="node"
+                                           placeholder="请输入密码..." style="width: 300px">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                </div>
+                                <div align="col-sm-2">
+                                    <button class="btn btn-primary" type="button" onclick="loginByNode()"><i
+                                            class="glyphicon glyphicon-search"></i>登录
+                                    </button>
+                                    <button class="btn btn-default" type="reset"><i
+                                            class="glyphicon glyphicon-refresh"></i>重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="/js/jquery-3.2.1.js"></script>
+<script src="/js/bootstrap3/js/bootstrap.js"></script>
+<script src="/js/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="/js/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+<!--全局ajaxSetUp-->
+<script src="/js/common/ajaxSetUp.js"></script>
+<script src="/js/common/jquery.cookie.min.js"></script>
+<script>
+function qingkong(){
+    $("#memberName").val("");
+    $("#password").val("");
+    $("#phone").val("");
+    $("#node").val("");
+}
+
+function loginByNode(productId){
+    var phone = $("#phone").val();
+    var node = $("#node").val();
+    $.ajax({
+        url:"http://127.0.0.1:8080/members/loginByNode",
+        data:{
+            phone:phone,
+            node:node,
+        },
+        type:"post",
+        success:function(res){
+            if(res.code==200){
+                loginFlag = true;
+                var data = res.data;
+                $.cookie("key",data);
+                if(productId){
+                    addCartItem(productId);
+                }else{
+                    location.href = "/";
+                }
+            }else{
+                alert(res.msg);
+            }
+        }
+    })
+}
+</script>
+</body>
+</html>
